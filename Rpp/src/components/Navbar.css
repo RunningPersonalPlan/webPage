@@ -104,7 +104,7 @@
   }
   
   /* responsive */
-  @media (max-width: 500px) {
+  @media (max-width: 551px) {
     .header {
       padding: 5px 5%;
     }
@@ -158,7 +158,7 @@
     }
   }
   
-  @media (max-width: 445px) {
+  @media (max-width: 550px) {
     .icons {
       display: inline-flex;
     }

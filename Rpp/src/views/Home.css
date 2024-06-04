@@ -40,6 +40,49 @@
   .wave1 path{
     background-color: transparent;
   }
+
+  .seccionComunH{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .seccionComunH h1{
+    color: #FFC67D ;
+    font-weight: 1000;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .seccionComunH{
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
+
+  }
+  .asideText{
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 10px;
+    text-align: center;
+  }
+  .asideText p{
+    
+    text-align: justify;
+    margin: 20px;
+  
+  }
+  .aboutUsImg{
+    max-width: 100%;
+    min-width: 300px;
+    height: 100%;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
+    padding: 10px;
+  }
 /* Estilos para pantallas menores a 445px */
   @media screen and (max-width: 1024px) {
     .textos-header {
@@ -56,23 +99,40 @@
       transition: font-size 0.3s ease;
     }
   
+    .seccionComunH{
+      
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
   }
   /* Estilos para pantallas menores a 445px */
-  @media screen and (max-width: 445px) {
+  @media screen and (max-width: 550px) {
     .textos-header {
       background-color: transparent;
       position: absolute;
       margin-top: 100px ;
       margin-left: 8px;
       transition: all 0.3s ease;
-      display:none;
-
-
-      
+     
     }
     .textos-header h1{
       font-size: 15px;
       transition: font-size 0.3s ease;
     }
+    .textos-header h1{
+      font-size: 15px;
+      transition: font-size 0.3s ease;
+    }
+  
+    .seccionComunH{
+      flex-wrap: wrap;
+      height: auto; 
+    }
+    .asideText, .aboutUsImg {
+      width: 100%; /* Hacer que los elementos ocupen toda el ancho en pantallas pequeñas */
+      margin-bottom: 20px; /* Añadir espacio entre los elementos en wrap */
+  }
+  
   
   }

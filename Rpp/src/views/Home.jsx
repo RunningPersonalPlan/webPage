@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Home.css"
 import Boton1 from '../components/Boton1.jsx'
+import imgAbout1 from "../assets/ImgAboutUs.jpg"
 
 const Home = () => {
     
@@ -8,8 +9,8 @@ const Home = () => {
     <>
     <section className='header-img'>
       <section className="textos-header">
-        <h1>Transforma tu sudor en éxito:</h1>
-        <h1>¡Entrena hoy, triunfa mañana!</h1>
+        <h1>Más que un entrenamiento, </h1>
+        <h1>una experiencia transformadora.</h1>
          <Boton1 name="Empieza Ahora" />
       </section>
       <div style={{ height: '150px', overflow: 'hidden' }} className='wave1'>
@@ -18,6 +19,23 @@ const Home = () => {
         </svg>
       </div>
     </section>
+    <section class="seccionComunH">
+      <aside className='asideText'>
+        <h1>Sobre Nosotros</h1>
+        <p>
+        En Running Personal Plan, somos un equipo de profesionales convencidos del poder transformador 
+        del running y comprometidos con el bienestar de las personas. Creemos que esta disciplina no 
+        solo mejora la condición física, sino que también tiene un impacto positivo en la salud mental, 
+        la autoestima y el bienestar general.
+        </p>
+      </aside>
+
+      <aside className='asideText'>
+        <img src={imgAbout1} className='aboutUsImg'/>
+      </aside>      
+
+    </section>
+    
     </>
 
 
