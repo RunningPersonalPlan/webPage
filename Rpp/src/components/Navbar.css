@@ -205,7 +205,7 @@
     }
   
     #check:checked ~ .navbar {
-      height: 150px;
+      height: 200px;
     }
   
     .navItem::after {

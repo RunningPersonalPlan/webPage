@@ -65,6 +65,8 @@
       margin-top: 100px ;
       margin-left: 8px;
       transition: all 0.3s ease;
+      display:none;
+
 
       
     }
