@@ -21,8 +21,9 @@ const Navbar = () => {
       </div>
     </label>
     <nav className="navbar">
-      <Link to="#" className="navItem" style={{ '--i': 0 }}>Personas</Link>
-      <Link to="#" className="navItem" style={{ '--i': 1 }}>Videos</Link>
+      <Link to="#" className="navItem" style={{ '--i': 0 }}>Entrenamiento</Link>
+      <Link to="#" className="navItem" style={{ '--i': 1 }}>Nosotros</Link>
+      <Link to="#" className="navItem" style={{ '--i': 1 }}>Blog</Link>
       <Link to="#" className="navItem" style={{ '--i': 2 }}>Contacto</Link>
     </nav>
   </header>

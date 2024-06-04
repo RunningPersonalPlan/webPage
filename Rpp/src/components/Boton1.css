@@ -1,67 +1,72 @@
-button {
-    padding: 0.75em 1.5em;
-    background-color: #000000;
-    border: 2px solid #000000;
-    font-size: larger;
-    border-radius: 1.65em;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  button::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to left, #f9bb06 0%, #f9bb06 100%);
-    z-index: -1;
-    transition: opacity 240ms linear;
-    opacity: 0;
-  }
-  
-  button:hover::before {
-    opacity: 1;
-  }
-  
-  button::after {
-    content: '';
-    height: 150%;
-    width: 0.25em;
+.button {
     background-color: #f9bb06;
-    box-shadow: 0px 0px 8px 4px #f9bb06;
-    transform: translateX(-1em);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: 1000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s ease-out;
   }
   
-  button:hover::after {
-    animation-duration: 300ms;
-    animation-name: sweep;
+  .button:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: translateY(-2px);
   }
   
-  @keyframes sweep {
-    from { 
-      transform: translateX(-1em)
-    }
-    to { 
-      transform: translateX(12.5em);
-      animation-timing-function: ease-out; 
-    }
+  .button:active {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: translateY(0);
   }
   
-  /* Animación de iluminación al cargar la página */
-  button {
-    animation-duration: 2s;
-    animation-name: glow;
+  .dark-background {
+    background-color: #000;
+    padding: 20px;
   }
   
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 10px #f9bb06, 0 0 20px #f9bb06;
-    }
-    100% {
-      box-shadow: none;
-    }
+  .button-3d {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9bb06;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+    transition: all 0.3s ease-out;
+  }
+  
+  .button-3d:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9bb06;
+    border-radius: 5px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-out;
+  }
+  
+  .button-3d:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+  }
+  
+  .button-3d:hover:before {
+    transform: translateY(-10px);
+  }
+  
+  .button-3d:active {
+    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+    transform: translateY(0);
+  }
+  
+  .button-3d:active:before {
+    transform: translateY(0);
   }
