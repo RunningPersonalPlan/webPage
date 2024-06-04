@@ -18,6 +18,10 @@
   }
   .textos-header {
     background-color: transparent;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 60px;
+    
   }
   .textos-header h1{
     background-color: transparent;
