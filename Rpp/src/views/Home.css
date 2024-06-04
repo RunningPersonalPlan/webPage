@@ -21,15 +21,17 @@
     position: absolute;
     margin-top: 50px;
     margin-left: 60px;
+    transition: font-size 0.3s ease;
     
   }
   .textos-header h1{
     background-color: transparent;
+    transition: font-size 0.3s ease;
   }
   .wave1 {
     background-color: transparent;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
   }
   .wave1 svg{
@@ -37,4 +39,38 @@
   }
   .wave1 path{
     background-color: transparent;
+  }
+/* Estilos para pantallas menores a 445px */
+  @media screen and (max-width: 1024px) {
+    .textos-header {
+      background-color: transparent;
+      position: absolute;
+      margin-top: 100px ;
+      margin-left: 100px;
+      transition: all 0.3s ease;
+
+      
+    }
+    .textos-header h1{
+      font-size: 15px;
+      transition: font-size 0.3s ease;
+    }
+  
+  }
+  /* Estilos para pantallas menores a 445px */
+  @media screen and (max-width: 445px) {
+    .textos-header {
+      background-color: transparent;
+      position: absolute;
+      margin-top: 100px ;
+      margin-left: 8px;
+      transition: all 0.3s ease;
+
+      
+    }
+    .textos-header h1{
+      font-size: 15px;
+      transition: font-size 0.3s ease;
+    }
+  
   }
