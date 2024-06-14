@@ -2,6 +2,25 @@ import React from 'react';
 import "./Home.css"
 import Boton1 from '../components/Boton1.jsx'
 import imgAbout1 from "../assets/ImgAboutUs.jpg"
+import TestimonioCard from '../components/TestimonioCard.jsx';
+
+const testimonios = [
+  {
+    nombre: 'Juan Pérez',
+    deporte: 'Fútbol',
+    profesion: 'Jugador Profesional',
+    descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis ligula quis porttitor blandit.',
+    imagen: 'https://via.placeholder.com/300', // URL de la imagen del testimonio
+  },
+  {
+    nombre: 'María García',
+    deporte: 'Tenis',
+    profesion: 'Entrenadora',
+    descripcion: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    imagen: 'https://via.placeholder.com/300', // URL de la imagen del testimonio
+  },
+];
+
 
 const Home = () => {
 
@@ -40,6 +59,23 @@ const Home = () => {
       </aside>      
 
     </section>
+
+    <div>
+      <h1 className="text-3xl font-bold mb-8 text-center text-white">Testimonios</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mapeamos cada testimonio para mostrarlo utilizando TestimonioCard */}
+        {testimonios.map((testimonio, index) => (
+          <TestimonioCard
+            key={index}
+            nombre={testimonio.nombre}
+            deporte={testimonio.deporte}
+            profesion={testimonio.profesion}
+            descripcion={testimonio.descripcion}
+            imagen={testimonio.imagen}
+          />
+        ))}
+      </div>
+    </div>
     
     </>
 

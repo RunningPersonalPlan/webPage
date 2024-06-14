@@ -5,6 +5,7 @@ import Home from './views/Home.jsx'
 import NotFound from './views/404.jsx'
 import "./App.css"
 import ContactUs from './views/Contacto.jsx'
+import Entrenamiento from './views/Entrenamiento.jsx'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route  path="/" element={<Home/>}/>
         <Route path="/404" element={<NotFound/>} />
         <Route path="/contacto" element={<ContactUs/>} />
+        <Route path="/entreno" element={<Entrenamiento/>} />
 
       </Routes>
      
