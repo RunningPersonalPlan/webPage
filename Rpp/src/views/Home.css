@@ -69,6 +69,7 @@
     box-sizing: border-box; 
     padding: 10px;
     text-align: center;
+    overflow: hidden;
   }
   .asideText p{
     
@@ -81,7 +82,19 @@
     min-width: 300px;
     height: 100%;
     box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
-    padding: 10px;
+    /* padding: 10px; */
+    border-radius: 7px;
+    
+  }
+  .containerImg {
+    
+    transition: all 0.5s ease; /* Suaviza las transiciones */
+  
+   }  
+  .containerImg:hover{
+    transform: scale(1.05);
+    filter:blur(0.5px);
+    transition: all 1s ease;
   }
 /* Estilos para pantallas menores a 445px */
   @media screen and (max-width: 1024px) {
@@ -133,6 +146,8 @@
       width: 100%; /* Hacer que los elementos ocupen toda el ancho en pantallas pequeñas */
       margin-bottom: 20px; /* Añadir espacio entre los elementos en wrap */
   }
+
+  
   
   
   }

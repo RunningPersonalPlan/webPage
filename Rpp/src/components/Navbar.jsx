@@ -24,7 +24,7 @@ const Navbar = () => {
       <Link to="#" className="navItem" style={{ '--i': 0 }}>Entrenamiento</Link>
       <Link to="#" className="navItem" style={{ '--i': 1 }}>Nosotros</Link>
       <Link to="#" className="navItem" style={{ '--i': 2 }}>Blog</Link>
-      <Link to="#" className="navItem" style={{ '--i': 3 }}>Contacto</Link>
+      <Link to="/contacto" className="navItem" style={{ '--i': 3 }}>Contacto</Link>
     </nav>
   </header>
 

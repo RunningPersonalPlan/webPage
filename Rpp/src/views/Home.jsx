@@ -4,6 +4,11 @@ import Boton1 from '../components/Boton1.jsx'
 import imgAbout1 from "../assets/ImgAboutUs.jpg"
 
 const Home = () => {
+
+  const handleRedirect = () => {
+    window.open('https://wa.me/573107686892', '_blank');
+    console.log("hizo click")
+  };
     
   return (
     <>
@@ -11,7 +16,7 @@ const Home = () => {
       <section className="textos-header">
         <h1>Más que un entrenamiento, </h1>
         <h1>una experiencia transformadora.</h1>
-         <Boton1 name="Empieza Ahora" />
+         <Boton1  onClick={handleRedirect} name="Empieza Ahora" />
       </section>
       <div style={{ height: '150px', overflow: 'hidden' }} className='wave1'>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
@@ -19,7 +24,7 @@ const Home = () => {
         </svg>
       </div>
     </section>
-    <section class="seccionComunH">
+    <section className="seccionComunH">
       <aside className='asideText'>
         <h1>Sobre Nosotros</h1>
         <p>
@@ -30,7 +35,7 @@ const Home = () => {
         </p>
       </aside>
 
-      <aside className='asideText'>
+      <aside className='asideText containerImg'>
         <img src={imgAbout1} className='aboutUsImg'/>
       </aside>      
 
