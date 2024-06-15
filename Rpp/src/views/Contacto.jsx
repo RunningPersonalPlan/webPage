@@ -88,8 +88,9 @@ const ContactForm = () => {
     
     <>
     {!isLoading && (
+    
     <div className="container">
-      <h2 className="title">Contacto</h2>
+      <h2 className="title text-yellow-400 text-3xl font-bold">Contacto</h2>
       <form className="form" onSubmit={onSubmitForm}>
         <label className="label" htmlFor="name">Nombre:</label>
         <input

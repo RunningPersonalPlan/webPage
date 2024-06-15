@@ -25,6 +25,7 @@ const activities = [
 const Blog = () => {
   return (
     <div className="flex flex-col items-center py-10 px-5 sm:px-10 lg:px-20">
+      <h1 className="text-yellow-400 text-3xl font-bold py-8 mt-10">Actividades</h1>
       <div className="flex flex-wrap justify-center">
         {activities.map((activity, index) => (
           <BlogComponent
