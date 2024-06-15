@@ -6,7 +6,7 @@ const Entrenamiento = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-10 md:py-20 mt-96 md:mt-20">
+    <div className="container mx-auto py-10 md:py-5 mt-80 md:mt-20">
     <div className="bg-transparent p-6 rounded-lg shadow-lg ">
       <h1 className="text-3xl font-bold mb-4 text-white text-center">Plan de Entrenamiento</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

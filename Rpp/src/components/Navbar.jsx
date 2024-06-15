@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="navItem" style={{ '--i': 0 }}>Home</Link>
       <Link to="/entreno" className="navItem" style={{ '--i': 1 }}>Entreno</Link>
-      <Link to="#" className="navItem" style={{ '--i': 2 }}>Blog</Link>
+      <Link to="/blog" className="navItem" style={{ '--i': 2 }}>Actividades</Link>
       <Link to="/contacto" className="navItem" style={{ '--i': 3 }}>Contacto</Link>
     </nav>
   </header>
