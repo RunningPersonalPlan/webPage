@@ -24,6 +24,7 @@ function App() {
         <Route path="/contacto" element={<ContactUs/>} />
         <Route path="/entreno" element={<Entrenamiento/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
 
