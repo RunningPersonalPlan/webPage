@@ -89,44 +89,69 @@ const ContactForm = () => {
     <>
     {!isLoading && (
     
-    <div className="container">
-      <h2 className="title text-yellow-400 text-3xl font-bold">Contacto</h2>
-      <form className="form" onSubmit={onSubmitForm}>
-        <label className="label" htmlFor="name">Nombre:</label>
+    
+    <div className="bg-transparent py-12">
+    <form className="max-w-md mx-auto p-4  rounded shadow-md" onSubmit={onSubmitForm}>
+      <h2 className="text-2xl font-bold mb-4 text-yellow-400">Contacto</h2>
+      <div className="mb-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+          Nombre
+        </label>
         <input
-          className="input"
-          type="text"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="name"
+          type="text"
           name="name"
+          placeholder="Ingrese su nombre"
           value={form.name}
           onChange={onUpdateField}
         />
         {errors.name && <div className="error">{errors.name}</div>}
         <br />
-        <label className="label" htmlFor="email">Email:</label>
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          Email
+        </label>
         <input
-          className="input"
-          type="email"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="email"
+          type="email"
+          placeholder="Ingrese su email"
           name="email"
           value={form.email}
           onChange={onUpdateField}
         />
         {errors.email && <div className="error">{errors.email}</div>}
         <br />
-        <label className="label" htmlFor="message">Mensaje:</label>
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+          Mensaje
+        </label>
         <textarea
-          className="textarea"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="message"
           name="message"
+          placeholder="Ingrese su mensaje"
           value={form.message}
           onChange={onUpdateField}
         />
         {errors.message && <div className="error">{errors.message}</div>}
         <br />
-        <input className="submit" type="submit" disabled={botonDesactivado} value="Enviar" />
-      </form>
-    </div>)}
+
+      </div>
+      <button
+        className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded"
+        type="submit"
+        disabled={botonDesactivado} 
+        value="Enviar"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+  )}
     {isLoading && <LoadingSpinner />}
     </>
     
