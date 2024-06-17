@@ -1,6 +1,5 @@
 // ContactForm.js
 import React, { useState } from 'react';
-import './ContactUs.css';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import LoadingSpinner from '../components/Isloading';
@@ -71,13 +70,13 @@ const ContactForm = () => {
     .then(response => {
     
       setBotonDesactivado(false);
-      navigate('/');
+      navigate('/FromSubmitted');
       
       
     })
     .catch(error => {
         
-        navigate('/');
+        navigate('/FromSubmitted');
         
         
     });

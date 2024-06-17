@@ -8,6 +8,7 @@ import ContactUs from './views/Contacto.jsx'
 import Entrenamiento from './views/Entrenamiento.jsx'
 import Blog from './views/Blog.jsx'
 import Footer from './components/Footer.jsx'
+import FormSubmitted from './views/FormSubmitted.jsx'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contacto" element={<ContactUs/>} />
         <Route path="/entreno" element={<Entrenamiento/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/FromSubmitted" element={<FormSubmitted/>} />
         <Route path="*" element={<NotFound />} />
 
       </Routes>
