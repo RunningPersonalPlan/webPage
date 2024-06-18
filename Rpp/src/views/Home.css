@@ -1,46 +1,111 @@
 .header-img {
     
     margin-top: 40px;
-    width: 100%;
-    height: 400px;
-    background: -webkit-linear-gradient(to top, hsla(135, 90%, 36%, 0), hsla(135, 90%, 36%, 0)),url("../assets/imgHome.jpg");; /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to top, hsla(135, 90%, 36%, 0), hsla(135, 90%, 36%, 0)),url("../assets/imgHome.jpg");; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url("../assets/imagenHome1.png");
+    /* width: 100%; */
+    height: 917px ;
+    flex-shrink: 0;
     background-size: cover;
     background-attachment: fixed;
-    background-position-y:-10px;
-    background-position-x: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    /* background-position-y:-10px;
+    background-position-x: center; */
     position: relative;
-    transition: background-position-y 0.5s ease;
+    /* transition: background-position-y 0.5s ease; */
   }
-  .header-img:hover{
+  /* .header-img:hover{
     transition: background-position-y 0.5s ease;
     background-position-y:-60px ;
+  } */
+  
+  .label {
+    height: 160px;
+    width: 733px;
   }
-  .textos-header {
-    background-color: transparent;
+  
+  .label .ALCANZA-TU-MEJOR {
+    color: transparent;
+    font-family: "Recursive-ExtraBold", Helvetica;
+    font-size: 95px;
+    font-weight: 400;
+    height: 100px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 95px;
     position: absolute;
-    margin-top: 50px;
-    margin-left: 60px;
-    transition: font-size 0.3s ease;
-    
+    margin-top: 32px;
+    width: 733px;
   }
-  .textos-header h1{
-    background-color: transparent;
-    transition: font-size 0.3s ease;
+  
+  .label .text-wrapper {
+    color: #000000;
+    font-weight: 800;
+    line-height: 114px;
   }
-  .wave1 {
-    background-color: transparent;
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-  }
-  .wave1 svg{
-    background-color: transparent;
-  }
-  .wave1 path{
-    background-color: transparent;
+  
+  .label .span {
+    color: #ffbd00;
+    font-family: "Recursive-Black", Helvetica;
+    font-weight: 900;
+    line-height: 90.2px;
   }
 
+  .label1 {
+    height: 53px;
+    width: 637px;
+  }
+  
+  .label1 .text-wrapper1 {
+    color: #2d2d2d;
+    font-family: "Recursive-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 53px;
+    left: 0;
+    letter-spacing: 0.25px;
+    line-height: 37.5px;
+    position: absolute;
+    margin-top: 220px;
+    width: 637px;
+  }
+
+  .box1 {
+    height: 60px;
+    width: 332px;
+  }
+  
+  .box1 .rectangle {
+    background-color: var(--yellow);
+    border-radius: 46px;
+    height: 60px;
+    left: 0;
+    position: relative;
+    margin-top: 270px ;
+    width: 332px;
+  }
+  .text-wrapper2{
+    color: #000000;
+    font-family: "Recursive-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    height: 16px;
+    letter-spacing: -0.48px;
+    line-height: 28.8px;
+    position: relative;
+    display: inline-block;
+   
+  }
+  .Primary{
+    margin: 2px;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+  }
+
+  
+
+/* aca no */
   .seccionComunH{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -81,22 +146,20 @@
     max-width: 100%;
     min-width: 300px;
     height: 100%;
-    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
-    /* padding: 10px; */
+    box-sizing: border-box; 
     border-radius: 7px;
     
   }
   .containerImg {
     
-    transition: all 0.5s ease; /* Suaviza las transiciones */
-  
+    transition: all 0.5s ease;
    }  
   .containerImg:hover{
     transform: scale(1.05);
     filter:blur(0.5px);
     transition: all 1s ease;
   }
-/* Estilos para pantallas menores a 445px */
+
   @media screen and (max-width: 1024px) {
     .textos-header {
       background-color: transparent;
@@ -119,7 +182,7 @@
     }
   
   }
-  /* Estilos para pantallas menores a 445px */
+
   @media screen and (max-width: 550px) {
     .textos-header {
       background-color: transparent;
@@ -143,11 +206,16 @@
       height: auto; 
     }
     .asideText, .aboutUsImg {
-      width: 100%; /* Hacer que los elementos ocupen toda el ancho en pantallas pequeñas */
-      margin-bottom: 20px; /* Añadir espacio entre los elementos en wrap */
+      width: 100%; 
+      margin-bottom: 20px; 
   }
 
   
   
   
   }
+
+
+  
+ 
+  

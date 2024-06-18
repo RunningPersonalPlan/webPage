@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css"
-import Boton1 from '../components/Boton1.jsx'
+import Primary from "../assets/Primary.png"
 import imgAbout1 from "../assets/ImgAboutUs.jpg"
 import TestimonioCard from '../components/TestimonioCard.jsx';
 
@@ -40,15 +40,31 @@ const Home = () => {
     <>
     <section className='header-img'>
       <section className="textos-header">
-        <h1>Más que un entrenamiento, </h1>
-        <h1>una experiencia transformadora.</h1>
-         <Boton1  onClick={handleRedirect} name="Empieza Ahora" />
-      </section>
-      <div style={{ height: '150px', overflow: 'hidden' }} className='wave1'>
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
-            <path d="M0.00,49.98 C224.88,242.28 327.59,-103.11 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none', fill: '#000000' }}></path>
-        </svg>
+      <div className="label">
+      <p className="ALCANZA-TU-MEJOR">
+        <span className="text-wrapper">
+          ALCANZA TU <br />
+        </span>
+        <span className="span">MEJOR VERSIÓN</span>
+      </p>
       </div>
+
+      <div className="label1">
+      <p className="text-wrapper1">
+        Te ayudamos a cuidar tu cuerpo y mente, entrenar de forma segura y alcanzar tus metas.
+      </p>
+      </div>
+
+      <div className="box1">
+      <button className="rectangle" onClick={handleRedirect}>
+      <div className="text-wrapper2">Conoce más</div>
+      <span className="Primary">
+        <img src={Primary} alt="icon"  /> 
+      </span>
+      </button>
+      </div>
+       
+      </section>
     </section>
     <section className="seccionComunH">
       <aside className='asideText'>
@@ -85,6 +101,7 @@ const Home = () => {
     </div>
     
     </>
+ 
 
 
    

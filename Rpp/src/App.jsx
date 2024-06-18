@@ -9,6 +9,7 @@ import Entrenamiento from './views/Entrenamiento.jsx'
 import Blog from './views/Blog.jsx'
 import Footer from './components/Footer.jsx'
 import FormSubmitted from './views/FormSubmitted.jsx'
+import './index.css';
 
 
 function App() {
