@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/RPPBLACK.jpg"
+import logo from "../assets/RPPlogo.svg";
+import whatsapp from "../assets/WhatsappLogo.svg"
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -21,10 +22,15 @@ const Navbar = () => {
       </div>
     </label>
     <nav className="navbar">
-      <Link to="/" className="navItem" style={{ '--i': 0 }}>Home</Link>
-      <Link to="/entreno" className="navItem" style={{ '--i': 1 }}>Entreno</Link>
-      <Link to="/blog" className="navItem" style={{ '--i': 2 }}>Actividades</Link>
-      <Link to="/contacto" className="navItem" style={{ '--i': 3 }}>Contacto</Link>
+      <Link to="/" className="navItem" style={{ '--i': 0 }}>SERVICIOS</Link>
+      <Link to="/entreno" className="navItem" style={{ '--i': 1 }}>NUESTRO EQUIPO</Link>
+      <Link to="/blog" className="navItem" style={{ '--i': 2 }}>TESTIMONIOS</Link>
+      <a href="https://wa.me/573107686892" className="navItem" id="whatsapp" style={{ '--i': 3 }}>
+      <span className="whatsappspan">
+        <img src={whatsapp} alt="whatsappicon"  /> 
+      </span>
+      CONTACTO
+      </a>
     </nav>
   </header>
 
