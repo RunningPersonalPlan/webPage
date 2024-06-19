@@ -6,3 +6,16 @@
     font-weight: 600;
     background-color: black;
 } */
+
+html, body, #root, .app {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-content {
+    flex: 1; /* Esto permite que el contenido principal crezca */
+    padding: 20px;
+  }
+  
