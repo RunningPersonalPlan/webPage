@@ -25,8 +25,8 @@ function App() {
           <Route  path="/" element={<Home/>}/>
           <Route path="/404" element={<NotFound/>} />
           <Route path="/contacto" element={<ContactUs/>} />
-          <Route path="/entreno" element={<Entrenamiento/>} />
-          <Route path="/blog" element={<Blog/>} />
+          <Route path="/nuestro-equipo" element={<Entrenamiento/>} />
+          <Route path="/comunidad" element={<Blog/>} />
           <Route path="/FromSubmitted" element={<FormSubmitted/>} />
           <Route path="*" element={<NotFound />} />
         

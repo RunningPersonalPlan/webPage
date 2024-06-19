@@ -22,9 +22,9 @@ const Navbar = () => {
       </div>
     </label>
     <nav className="navbar">
-      <Link to="/" className="navItem" style={{ '--i': 0 }}>SERVICIOS</Link>
-      <Link to="/entreno" className="navItem" style={{ '--i': 1 }}>NUESTRO EQUIPO</Link>
-      <Link to="/blog" className="navItem" style={{ '--i': 2 }}>TESTIMONIOS</Link>
+      <Link to="/" className="navItem" style={{ '--i': 0 }}>HOME</Link>
+      <Link to="/nuestro-equipo" className="navItem" style={{ '--i': 1 }}>NUESTRO EQUIPO</Link>
+      <Link to="/comunidad" className="navItem" style={{ '--i': 2 }}>TESTIMONIOS</Link>
       <a href="https://wa.me/573107686892" className="navItem" id="whatsapp" style={{ '--i': 3 }}>
       <span className="whatsappspan">
         <img src={whatsapp} alt="whatsappicon"  /> 
