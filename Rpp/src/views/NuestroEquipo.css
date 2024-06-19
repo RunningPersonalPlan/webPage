@@ -12,3 +12,98 @@
 .titulo-amarillo{
     color:  #FFBD00;
 }
+
+.flex-area-1-content{
+    width: 50%;
+    margin-right: 32px;
+}
+.flex-titulo-area-1 {
+    color: var(--Black, #0F0F0F);
+
+    /* Heading 4 */
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 30px */
+}
+.titulo-area-1 {
+    color: var(--Black, #0F0F0F);
+
+    /* Heading 4 */
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 30px */
+}
+.content-area-1{
+    color: #2D2D2D;
+
+    text-align: justify;
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: 0.25px;
+}
+
+.flex-content-area-1{
+    color: #2D2D2D;
+
+    text-align: justify;
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: 0.25px;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .titulo-entreno{
+        font-size: 42px;    
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .flex-area-1{
+    flex-wrap: wrap;
+    /* justify-items: center;
+    justify-content: center; */
+  }
+  .flex-area-1-content{
+    width: 100%;
+    margin-right: 32px;
+}
+
+  .flex-titulo-area-1 {
+ 
+    font-size: 25px;
+    
+}
+.titulo-area-1 {
+ 
+    font-size: 25px;
+  
+}
+.content-area-1{
+   
+    font-size: 10px;
+   
+}
+
+.flex-content-area-1{
+   
+    font-size: 10px;
+    
+}
+
+  
+
+}
