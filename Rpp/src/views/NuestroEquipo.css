@@ -8,6 +8,10 @@
     margin-bottom: 49px;
 
 }
+.containerder{
+    min-width: 589px;
+
+}
 
 .titulo-amarillo{
     color:  #FFBD00;
@@ -60,7 +64,15 @@
     line-height: 150%; /* 37.5px */
     letter-spacing: 0.25px;
 }
-
+@media screen and (max-width:1400px) {
+    .containerder{
+        min-width: 100px;
+    
+    }
+    .sectionizq{
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and (max-width: 950px) {
 
