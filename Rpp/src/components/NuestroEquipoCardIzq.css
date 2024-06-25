@@ -42,7 +42,7 @@
     height: 94px;
 }
 
-@media screen and (max-width: 629px){
+@media screen and (max-width: 970px){
 
     .container-img-izq{
         position: relative;
@@ -87,5 +87,24 @@
         width: 100px;
         height: 25px;
     }
+  
 
+}
+@media screen and (max-width: 500px){
+    .Nombre-izq{
+        position: absolute;
+        top: 75%; 
+        left: 85%;
+        min-width: 60px;
+        text-wrap: nowrap;
+        transform: translate(-50%, -50%); 
+        color: var(--Black, #0F0F0F);
+        /* Heading 2 */
+        font-family: Recursive;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 58.8px */
+    }
+        
 }

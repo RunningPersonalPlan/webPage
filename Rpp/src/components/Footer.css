@@ -1,0 +1,108 @@
+a{
+    cursor: pointer;
+}
+.footer{
+    
+    background: black;
+    padding: 20px; 
+}
+.container-contacto-redes{
+    display: flex;
+    
+}
+.container-contacto{
+    width: 100%;
+    min-width: 240px;
+    color: rgba(242, 242, 241, 0.50);
+    font-family: Recursive;
+
+    
+}
+.titulofooter{
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+.info-footer{
+    margin-top: 10px;
+    margin-left: 32px;
+    color: var(--Concrete, #F2F2F1);
+    font-family: Recursive;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 81%; 
+}
+
+.container-redes {
+    width: 100%;
+    min-width: 240px;
+    color: rgba(242, 242, 241, 0.50);
+    font-family: Recursive;
+}
+
+.copy-right {
+    margin-top: 20px; /* Ajusta según sea necesario */
+    text-align: center; /* Centra el texto */
+}
+
+.info-footer-copy {
+    color: rgba(242, 242, 241, 0.50);
+    font-family: Recursive;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 81%;
+}
+
+.img-footer {
+    width: 31px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin: 0 10px; /* Espacio entre las imágenes */
+}
+.img-redes-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.titulofooter-redes{
+    margin-top: 10px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+@media screen and (max-width: 590px){
+
+    .container-contacto-redes{
+        flex-wrap: wrap;        
+    }
+    .container-contacto{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .titulofooter-redes{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .titulofooter{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .info-footer{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+}

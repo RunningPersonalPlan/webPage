@@ -1,24 +1,31 @@
 import React from 'react';
+import "./Footer.css"
+import instagram from "../assets/instagram.svg"
+import facebook from "../assets/facebook.svg"
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent mt-8 h-13">
-      <div className="mx-auto flex items-center justify-center flex-wrap py-0">
-        {/* Enlaces de redes sociales */}
-        <a href="https://www.instagram.com/runningpersonalplan/" className="mx-2">
-          <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" className="w-6 h-6" />
-        </a>
-        {/* <a href="" className="mx-2">
-          <img src="../assets/strava.png" alt="Strava" className="w-6 h-6" />
-        </a> */}
-        <a href="https://wa.me/573107686892" className="mx-2">
-          <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp" className="w-6 h-6" />
-        </a>
-        {/* Añade más enlaces o imágenes según necesites */}
+    <footer className="footer">
+      <div className='container-contacto-redes'>
+        <div className='container-contacto'>
+          <h1 className='titulofooter'>CONTACTO</h1>
+          <h2 className='info-footer'>Celular: 300 257 5129 </h2>
+          <h2 className='info-footer'>Correo: info@rpp.com.co</h2>
+        </div>
+        <div className='container-redes'>
+        <h1 className='titulofooter-redes'>REDES SOCIALES</h1>  
+      
+        <div className='img-redes-container'>
+            <a href="#"><img src={instagram} alt="instagram" className='img-footer' /></a>
+            <a href="#"><img src={facebook} alt="facebook" className='img-footer' /></a>
+        </div>
+
+        </div>
       </div>
-      <div className="text-center text-gray-400 bg-transparent py-2">
-        &copy; 2024 RPP. Todos los derechos reservados.
+      <div className='copy-right'>
+        <h1 className='info-footer-copy'>© 2024 RPP. Todos los derechos reservados</h1>
       </div>
+    
     </footer>
   );
 };

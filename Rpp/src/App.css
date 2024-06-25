@@ -15,7 +15,7 @@ html, body, #root, .app {
   }
   
   .app-content {
-    flex: 1; /* Esto permite que el contenido principal crezca */
+    flex: 1;
     padding: 20px;
   }
   
