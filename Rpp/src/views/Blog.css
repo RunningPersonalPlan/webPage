@@ -1,0 +1,19 @@
+.titulo-pupilos-black{
+    color: #000;
+    text-align: center;
+    font-family: Recursive;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+
+}
+.titulo-pupilos-yellow{
+    color: var(--Yellow, #FFBD00);
+    font-family: Recursive;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 95%;
+
+}
