@@ -1,31 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Mousewheel } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+
 import './Carousel.css';
 
 const Carousel = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // 10000ms = 10 seconds
-
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
-  }, [slides.length]);
-
-  const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  };
-
-  const goToPrevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
-  };
-
+ 
   return (
-    <div className="carousel">
+    
+    <Swiper 
+    className="carousel"
+    spaceBetween={50}
+    slidesPerView={1}
+    autoplay={{ delay: 5000, disableOnInteraction: false }}
+    mousewheel={{ forceToAxis: true }}
+    modules={[Autoplay, Mousewheel]} 
+    
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+    >
       {/* <button onClick={goToPrevSlide} className='button-prev'>Prev</button> */}
       <div className="carousel-content">
-        <div className="carousel-slide" style={{ transform: `translateX(-${currentIndex * 105}%)` }}>
+        
           {slides.map((slide, index) => (
-            <div className="slide" key={index}>
+            <SwiperSlide className="slide" key={index}>
               <div className="slide-left">
                 <img src={slide.image1} alt="Slide" />
               </div>
@@ -37,12 +41,14 @@ const Carousel = ({ slides }) => {
                 
                 <img src={slide.image2} alt="Slide bottom" className="bottom-image" />
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        
       </div>
       {/* <button onClick={goToNextSlide} className='button-next'>Next</button> */}
-    </div>
+    </Swiper>
+    
+    
   );
 };
 
