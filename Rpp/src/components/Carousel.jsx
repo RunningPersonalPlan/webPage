@@ -3,11 +3,14 @@ import React from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Mousewheel } from 'swiper/modules';
+import { Autoplay, Mousewheel,EffectFade} from 'swiper/modules';
+import { Scrollbar} from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
-
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
+import "swiper/css/mousewheel"
 import './Carousel.css';
 
 const Carousel = ({ slides }) => {
@@ -18,10 +21,13 @@ const Carousel = ({ slides }) => {
     className="carousel"
     spaceBetween={50}
     slidesPerView={1}
+    effect="fade" 
+    
     autoplay={{ delay: 5000, disableOnInteraction: false }}
     mousewheel={{ forceToAxis: true }}
-    modules={[Autoplay, Mousewheel]} 
-    
+    scrollbar={{ draggable: true }}
+    modules={[Autoplay, Mousewheel,Scrollbar,EffectFade]} 
+
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
     >
@@ -29,7 +35,7 @@ const Carousel = ({ slides }) => {
       <div className="carousel-content">
         
           {slides.map((slide, index) => (
-            <SwiperSlide className="slide" key={index}>
+            <SwiperSlide className="slide bg-white" key={index}>
               <div className="slide-left">
                 <img src={slide.image1} alt="Slide" />
               </div>
