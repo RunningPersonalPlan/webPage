@@ -38,7 +38,7 @@ const Carousel = ({ slides }) => {
       <div className="carousel-content">
         
           {slides.map((slide, index) => (
-            <SwiperSlide className="slide bg-white" key={index}>
+            <SwiperSlide className="slide " key={index}>
               <div className="slide-left">
                 <img src={slide.image1} alt="Slide" />
               </div>
