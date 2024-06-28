@@ -6,7 +6,7 @@ import Nicolas from "../assets/Nicolas.png"
 import OscarAndres from "../assets/OscarAndres.png"
 import "./NuestroEquipo.css"
 import NuestroEquipoCardDer from '../components/NuestroEquipoCardDer.jsx';
-const Entrenamiento = () => {
+const NuestroEquipo = () => {
   
 
   return (
@@ -203,4 +203,4 @@ const Entrenamiento = () => {
   );
 };
 
-export default Entrenamiento;
+export default NuestroEquipo;
