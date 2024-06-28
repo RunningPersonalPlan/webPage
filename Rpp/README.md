@@ -1,4 +1,4 @@
-# RPP web page <img src="./Rpp/public/RPPBLACKSVG.svg" alt="Vite" width="32" height="32">
+# RPP web page <img src="./public/RPPBLACKSVG.svg" alt="Vite" width="32" height="32">
 
 ## DESCRIPCIÓN
 Esta es una página web informativa y de contacto para posibles interesados en adquirir servicios de planes deportivos personalizados.
