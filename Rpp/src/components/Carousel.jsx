@@ -31,8 +31,7 @@ const Carousel = ({ slides }) => {
     
     modules={[Autoplay, Mousewheel,EffectFade,Pagination]} 
 
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={(swiper) => console.log(swiper)}
+  
     >
       {/* <button onClick={goToPrevSlide} className='button-prev'>Prev</button> */}
       <div className="carousel-content">
