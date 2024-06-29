@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
    <header className="header">
     <a href="/" className="logo">
-      <img src={logo} className='logo'/>
+      <img src={logo} className='logo' alt='logo'/>
     </a>
 
     <input type="checkbox" id="check" />
