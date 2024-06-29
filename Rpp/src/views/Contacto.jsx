@@ -1,5 +1,5 @@
 // ContactForm.js
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import LoadingSpinner from '../components/Isloading';
@@ -67,14 +67,14 @@ const ContactForm = () => {
     };
 
     await axios.post('https://backweppage.vercel.app/send-email', emailData)
-    .then(response => {
+    .then(() => {
     
       setBotonDesactivado(false);
       navigate('/FromSubmitted');
       
       
     })
-    .catch(error => {
+    .catch(() => {
         
         navigate('/FromSubmitted');
         

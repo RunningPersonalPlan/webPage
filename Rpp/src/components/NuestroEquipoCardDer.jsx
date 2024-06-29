@@ -1,5 +1,5 @@
-import React from 'react';
 import "./NuestroEquipoCardDer.css"
+import PropTypes from 'prop-types';
 
 const NuestroEquipoCardDer = ({ nombre,imagen, apellido }) => {
   return (
@@ -30,6 +30,12 @@ const NuestroEquipoCardDer = ({ nombre,imagen, apellido }) => {
      
     </div>
   );
+};
+
+NuestroEquipoCardDer.propTypes = {
+  nombre: PropTypes.string.isRequired,
+  apellido: PropTypes.string.isRequired,
+  imagen: PropTypes.string.isRequired
 };
 
 export default NuestroEquipoCardDer;

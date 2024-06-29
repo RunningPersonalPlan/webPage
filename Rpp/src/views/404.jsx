@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/RPPBLACK.jpg"
+import { useEffect } from 'react';
 
 const NotFound = () => {
 

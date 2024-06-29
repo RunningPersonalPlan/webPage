@@ -1,4 +1,3 @@
-import React from 'react';
 import NuestroEquipoCardIzq from "../components/NuestroEquipoCardIzq.jsx"
 import eduardoimg from "../assets/Eduardoimg.png";
 import Monica from "../assets/Monica.png";

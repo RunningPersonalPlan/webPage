@@ -1,5 +1,4 @@
-import React from 'react';
-
+import PropTypes from 'prop-types';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -58,6 +57,10 @@ const Carousel = ({ slides }) => {
     
     
   );
+};
+
+Carousel.propTypes = {
+  slides: PropTypes.array.isRequired, // or PropTypes.arrayOf(PropTypes.object) if slides is an array of objects
 };
 
 export default Carousel;
