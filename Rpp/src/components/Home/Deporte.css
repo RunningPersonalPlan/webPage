@@ -47,15 +47,10 @@
     }
     
     .container-deportes .container-deportes-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+      
         width: 155px;
         height: 143px;
-        background: var(--yellow);
-        border-radius: 20px;
+     
     }
     .container-deportes .container-deportes-card p{
         margin:0;
@@ -74,4 +69,11 @@
         grid-row: 3;
     }
 
+}
+@media screen and (max-width:430px) {
+
+    .container-deportes .container-deportes-card{
+        width: 100px;
+    }
+    
 }
