@@ -1,7 +1,8 @@
 import "./Home.css"
 import Primary from "../assets/Primary.png"
 import Deporte from "../components/Home/Deportes.jsx"
-
+import Accordion from "../components/Home/Accordion.jsx";
+import Seguridadtemp from "../templates/home/valores/seguridad.js"
 const Home = () => {
 
   const handleRedirect = () => {
@@ -45,6 +46,25 @@ const Home = () => {
         <h1>Encuentra tu pasión en el deporte</h1>
         <p>Descubre nuestros planes de running, cycling, triathlon y más, diseñados para ayudarte a alcanzar tu porpósito deportivo y personal</p>
         <Deporte/>
+    </section>
+
+    <section className="section-pasion-deporte">
+        <h1>Nuestros valores, ¡tu tranquilidad!</h1>
+        <p>Seguridad, bienestar integral y resultados visibles en cada entrenamiento</p>
+        <div className="container">
+          <div className="container-accordion">
+            <Accordion 
+            key={"SEGURIDAD"} 
+            title={"SEGURIDAD"} 
+            content={Seguridadtemp()}
+
+            />
+          </div>
+          <img src="" alt="Nuestros valores img" className="imagen-accordeon" />
+        </div>
+        
+       
+
     </section>
     
       
