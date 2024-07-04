@@ -22,7 +22,7 @@ const Button = () => {
         <img src={MEmbarazo} alt="Mujeres en embarazo" />
         <p>Mujeres en embarazo</p>
       </div>
-      <div className="container-deportes-card">
+      <div className="container-deportes-card" id="card-hlife">
         <img src={HLife} alt="Healthy Life" />
         <p>Healthy Life</p>
       </div>
@@ -34,7 +34,7 @@ const Button = () => {
         <img src={Duathlon} alt="Duathlon" />
         <p>Duathlon</p>
       </div>
-      <div className="container-deportes-card">
+      <div className="container-deportes-card" id="card-aquathlon">
         <img src={Aquathlon} alt="Aquathlon" />
         <p>Aquathlon</p>
       </div>
