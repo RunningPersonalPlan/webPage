@@ -1,5 +1,6 @@
 import "./Home.css"
 import Primary from "../assets/Primary.png"
+import Deporte from "../components/Home/Deportes.jsx"
 
 const Home = () => {
 
@@ -37,6 +38,13 @@ const Home = () => {
       </div>
        
       </section>
+
+    </section>
+
+    <section className="section-pasion-deporte">
+        <h1>Encuentra tu pasión en el deporte</h1>
+        <p>Descubre nuestros planes de running, cycling, triathlon y más, diseñados para ayudarte a alcanzar tu porpósito deportivo y personal</p>
+        <Deporte/>
     </section>
     
       

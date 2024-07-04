@@ -1,0 +1,25 @@
+.container-deportes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100% ; 
+    gap:16px ;
+    background-color: blue;
+    justify-items: center;
+    align-items: center;
+}
+
+.container-deportes .container-deportes-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 155px;
+    height: 143px;
+    background: var(--yellow);
+    border-radius: 20px;
+}
+#card-triathlon{
+    grid-row: 3/5;
+    height: 286px;
+}

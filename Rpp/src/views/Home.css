@@ -16,15 +16,6 @@
     position: relative;
     /* transition: background-position-y 0.5s ease; */
   }
-  /* .header-img:hover{
-    transition: background-position-y 0.5s ease;
-    background-position-y:-60px ;
-  } */
-  
-  /* .label {
-    height: 160px;
-    width: 733px;
-  } */
   
   .label .ALCANZA-TU-MEJOR {
     color: transparent;
@@ -77,7 +68,7 @@
     width: 332px;
   }
   .text-wrapper2{
-    color: #000000;
+    color:var(--black);
     font-family: "Recursive-Regular", Helvetica;
     font-size: 24px;
     font-weight: 400;
@@ -94,7 +85,41 @@
     display: inline-block;
     position: relative;
   }
+
+  .section-pasion-deporte{
+    margin-top: 55px;
+    width: calc(100% - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .section-pasion-deporte h1{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    color:var(--black);
+    text-align: center;
+    font-family: Recursive;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
   
+  .section-pasion-deporte p{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 55px;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: Recursive;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+    letter-spacing: 0.13px;
+
+  }
 
   @media screen and (max-width: 1024px) {
    
@@ -117,6 +142,12 @@
     }
     .box1 .rectangle {
       top: 530px;
+    }
+    .section-pasion-deporte h1{
+      font-size: 48px;
+    }
+    .section-pasion-deporte p{
+      font-size: 26px;
     }
   
     
@@ -164,6 +195,13 @@
     .box1 .rectangle {
       top:40%;
       width: 100%;
+    }
+
+    .section-pasion-deporte h1{
+      font-size: 24px;
+    }
+    .section-pasion-deporte p{
+      font-size: 13px;
     }
   
  
