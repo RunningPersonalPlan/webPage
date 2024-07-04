@@ -38,24 +38,9 @@ const Home = () => {
        
       </section>
     </section>
-    <section className='servicios'>
-      <div className='container-titulos'>
-        <h1 className='tiulo-sevicios'>Estos son los servicios que ofrecemos</h1>
-        <h2 className='subtitulo-servicios'>Entrenamiento personalizados y apoyo continuo para alcanzar tus metas deportivas</h2>
-      </div>
-      <div className="container-servicios">
-        <div className='e-personal'>
-          <h1>ENTRENAMIENTO PERSONAL Y AUTÓNOMO</h1>
-          <h2>Nos adaptamos a tus necesidades. Entrena a tu ritmo y logra tus metas deportivas con nuestro apoyo.</h2>
-        </div>
-        <div className='e-personal1'>
-          <h1>MICRO CICLOS</h1>
-          <h2>Incluyen entrenamientos de flexibilidad, fuerza y cross training. Diseñados para mejorar tu rendimiento integral y prevenir lesiones.
-          </h2>
-        </div>
-      </div>
+    
       
-    </section>
+ 
     
     </>
  
