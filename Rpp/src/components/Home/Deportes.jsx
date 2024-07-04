@@ -9,8 +9,8 @@ import Aquathlon from "../../assets/DeportesLogo/Aquathlon.svg"
 
 const Button = () => {
   return (
-    <div className="container-deportes">
-      <div className="container-deportes-card">
+    <div className="container-deportes" >
+      <div className="container-deportes-card" id="card-running">
         <img src={running} alt="Running" />
         <p>Running</p>
       </div>

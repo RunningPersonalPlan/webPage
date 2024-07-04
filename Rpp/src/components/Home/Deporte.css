@@ -6,7 +6,7 @@
     padding-left: 2%;
     padding-right: 2%;
     width:100% ; 
-    background-color: blue;
+    background-color: transparent;
     justify-items: center;
     align-items: center;
 }
@@ -24,6 +24,20 @@
 }
 .container-deportes .container-deportes-card p{
     margin:0;
+    font-family: Recursive;
+    color: rgba(15, 15, 15, 0.60);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+    letter-spacing: 0.19px;
+}
+#card-running{
+    background-color: var(--black);
+    
+}
+#card-running p{
+    color: rgba(242, 242, 242, 0.60);   
 }
 #card-triathlon{
     grid-column: 3/3;
@@ -32,6 +46,10 @@
 }
 #card-hlife{
     grid-column: 2;
+    background-color: var(--black); 
+}
+#card-hlife p{
+    color: rgba(242, 242, 242, 0.60);   
 }
 #card-aquathlon{
     grid-column: 1;
@@ -43,7 +61,7 @@
         grid-template-columns: 1fr 1fr ;
         gap:16px ;
         padding: 0px;
-        background-color: blue;
+        
     }
     
     .container-deportes .container-deportes-card{
@@ -54,6 +72,8 @@
     }
     .container-deportes .container-deportes-card p{
         margin:0;
+        font-size: 13px;
+        letter-spacing: 0.13px;
     }
     #card-triathlon{
         grid-row: 3/5;
