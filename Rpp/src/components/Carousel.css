@@ -3,25 +3,25 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: auto;
+    margin: 10px auto;
     overflow: hidden;
     
   }
   
-  .carousel-content {
+  /* .carousel-content {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
     border: solid red;
-  }
+  } */
   
-  .carousel-slide {
+  /* .carousel-slide {
     display: flex;
     width: 100%;
     border: solid yellow;
     gap: 60px;
 
-  }
+  } */
   
   .slide {
     display: flex;
@@ -60,13 +60,7 @@
  
   }
   
- .button-prev{
-  margin: 10px;
- }
 
- .button-next{
-  margin: 10px;
- }
 
  .container-text-right{
   height: 400px;
@@ -99,4 +93,26 @@
 .swiper-pagination-bullet-active {
  
   background-color: #FFBD00; 
+}
+
+@media (max-width:480px){
+  .slide{
+    flex-direction: column-reverse;
+  }
+  .slide-left,
+  .slide-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container-text-right{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }

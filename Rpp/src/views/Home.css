@@ -21,42 +21,34 @@
     background-position-y:-60px ;
   } */
   
-  .label {
+  /* .label {
     height: 160px;
     width: 733px;
-  }
+  } */
   
   .label .ALCANZA-TU-MEJOR {
     color: transparent;
     font-family: "Recursive-ExtraBold", Helvetica;
     font-size: 95px;
     font-weight: 400;
-    height: 100px;
     left: 0;
     letter-spacing: 0;
     line-height: 95px;
     position: absolute;
-    margin-top: 32px;
     width: 733px;
   }
   
   .label .text-wrapper {
     color: #000000;
     font-weight: 800;
-    line-height: 114px;
   }
   
   .label .span {
     color: #ffbd00;
     font-family: "Recursive-Black", Helvetica;
     font-weight: 900;
-    line-height: 90.2px;
   }
 
-  .label1 {
-    height: 53px;
-    width: 637px;
-  }
   
   .label1 .text-wrapper1 {
     color: #2d2d2d;
@@ -68,22 +60,23 @@
     letter-spacing: 0.25px;
     line-height: 37.5px;
     position: absolute;
-    margin-top: 220px;
-    width: 637px;
+    top:400px;
+    max-width: 637px;
   }
 
-  .box1 {
+  /* .box1 {
     height: 60px;
     width:100%;
-  }
+  } */
   
   .box1 .rectangle {
     background-color: var(--yellow);
     border-radius: 46px;
     height: 60px;
     left: 0;
-    position: relative;
-    margin-top: 270px ;
+    position: absolute;
+    left: 0;
+    top:500px;
     width: 332px;
   }
   .text-wrapper2{
@@ -224,89 +217,28 @@
   
 
   @media screen and (max-width: 1024px) {
-    .label {
-      height: 160px;
-      width: auto;
+   
+    .header-img {
+      height: 600px;
     }
-    
+  
     .label .ALCANZA-TU-MEJOR {
-      color: transparent;
-      font-family: "Recursive-ExtraBold", Helvetica;
+      height: 400px;
       font-size: 65px;
-      font-weight: 400;
-      height: 100px;
-      left: 0;
-      letter-spacing: 0;
-      line-height: 70px;
-      position: absolute;
-      margin-top: 32px;
-      width: 520px;
+      max-width: 300px;
+      min-width: 200px;
+      height: 650px;
     }
-    
-    .label .text-wrapper {
-      color: #000000;
-      font-weight: 800;
-      line-height: 114px;
-    }
-    
-    .label .span {
-      color: #ffbd00;
-      font-family: "Recursive-Black", Helvetica;
-      font-weight: 900;
-      line-height: 90.2px;
-    }
-  
-    .label1 {
-      height: 53px;
-      width: auto;
-    }
-    
+
     .label1 .text-wrapper1 {
-      color: #2d2d2d;
-      font-family: "Recursive-Regular", Helvetica;
-      font-size: 25px;
-      font-weight: 400;
-      height: 53px;
-      left: 0;
-      letter-spacing: 0.25px;
-      line-height: 37.5px;
-      position: absolute;
-      margin-top: 220px;
       width: auto;
+      font-size: 25px;
+      
+    }
+    .box1 .rectangle {
+      top: 530px;
     }
   
-    .box1 {
-      height: 60px;
-      width: auto;
-    }
-    
-    .box1 .rectangle {
-      background-color: var(--yellow);
-      border-radius: 46px;
-      height: 60px;
-      left: 0;
-      position: relative;
-      margin-top: 270px ;
-      width: 332px;
-    }
-    .text-wrapper2{
-      color: #000000;
-      font-family: "Recursive-Regular", Helvetica;
-      font-size: 24px;
-      font-weight: 400;
-      height: 16px;
-      letter-spacing: -0.48px;
-      line-height: 28.8px;
-      position: relative;
-      display: inline-block;
-     
-    }
-    .Primary{
-      margin: 2px;
-      margin-left: 10px;
-      display: inline-block;
-      position: relative;
-    }
     .container-titulos{
       display: flex;
       width: calc(100% - 64px); ;
@@ -353,44 +285,19 @@
   
   }
 
-  @media screen and (max-width: 617px) {
 
-   
-  
-  
-    .box1 {
-      height: 60px;
-      width: auto;
-    }
-    
-    .box1 .rectangle {
-      background-color: var(--yellow);
-      border-radius: 46px;
-      height: 60px;
-      left: 0;
-      position: relative;
-      margin-top: 300px ;
-      width: 200px;
-    }
-    
-  
-  
-  
-  }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width:600px) {
 
     .label .ALCANZA-TU-MEJOR {
-      color: transparent;
-      font-family: "Recursive-ExtraBold", Helvetica;
+      width: 300px;
+      top:30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
       font-size: 40px;
-      font-weight: 400;
-      height: 100px;
-      left: 0;
-      letter-spacing: 0;
-      line-height: 40px;
-      position: absolute;
-      margin-top: 32px;
-      width: 200px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 107%;
     }
     
     .label .text-wrapper {
@@ -406,10 +313,7 @@
       line-height: 90.2px;
     }
   
-    .label1 {
-      height: 53px;
-      width: auto;
-    }
+ 
     
     .label1 .text-wrapper1 {
       color: #2d2d2d;

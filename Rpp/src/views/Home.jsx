@@ -15,7 +15,7 @@ const Home = () => {
       <div className="label">
       <p className="ALCANZA-TU-MEJOR">
         <span className="text-wrapper">
-          ALCANZA TU <br />
+        MATERIALIZA TU <br />
         </span>
         <span className="span">MEJOR VERSIÓN</span>
       </p>
@@ -23,7 +23,7 @@ const Home = () => {
 
       <div className="label1">
       <p className="text-wrapper1">
-        Te ayudamos a cuidar tu cuerpo y mente, entrenar de forma segura y alcanzar tus metas.
+        Te ayudamos a cuidar tu cuerpo y mente, entrenar de forma segura y alcanzar tus propósitos
       </p>
       </div>
 

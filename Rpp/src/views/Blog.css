@@ -9,11 +9,35 @@
 
 }
 .titulo-pupilos-yellow{
-    color: var(--Yellow, #FFBD00);
+    color: var(--Yellow, hsl(44, 100%, 50%));
     font-family: Recursive;
+    text-align: center;
     font-size: 70px;
     font-style: normal;
     font-weight: 900;
     line-height: 95%;
 
 }
+
+@media (max-width:480px){
+    .titulo-pupilos-black{
+        font-size: 35px;
+        text-align: center;
+    }
+    .titulo-pupilos-yellow{
+        font-size: 35px;    
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .titulo-pupilos-black{
+        font-size: 60px;
+        text-align: center;
+    }
+    .titulo-pupilos-yellow{
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
