@@ -42,8 +42,20 @@
     width: 100%;
     margin-top: 24px;
     padding: 24px;
+    transition: max-height 1s ease-out, visibility 1s ease-out, opacity 1s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
 
 }
+.accordion-content.open {
+    max-height: fit-content; /* Ajusta este valor según el contenido */
+    visibility: visible;
+    opacity: 1;
+}
+
+
 .accordion-content h3{
     color: var(--Black);
     display: inline-block;

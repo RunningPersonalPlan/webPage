@@ -219,8 +219,20 @@
     .section-pasion-deporte p{
       font-size: 13px;
     }
+    .section-pasion-deporte .container{
+      width: 100%;
+      flex-direction: column;
+    }
+    .section-pasion-deporte .container .container-accordion{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .section-pasion-deporte .container img{
+      width: 100%;
+      height: 616px;
+    }
   
- 
 
   }
 
