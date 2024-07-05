@@ -6,14 +6,16 @@ import Seguridadtemp from "../templates/home/valores/seguridad.js"
 import BienestarIntegral from "../templates/home/valores/BienestarIntegral.js";
 import Resultados from "../templates/home/valores/Resultados.js";
 import Valoresimg from "../assets/fotos-home/valoresimg.jpg"
+import { useRef } from "react";
 
 
 const Home = () => {
-
-  const handleRedirect = () => {
-    window.open('https://wa.me/573107686892', '_blank');
-    console.log("hizo click")
-  };
+  const sectionSportRef = useRef(null);
+  const scrollToSection = () => {
+    if (sectionSportRef.current) {
+      sectionSportRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+};
     
   return (
     <>
@@ -35,7 +37,7 @@ const Home = () => {
       </div>
 
       <div className="box1">
-      <button className="rectangle" onClick={handleRedirect}>
+      <button className="rectangle" onClick={scrollToSection}>
       <div className="text-wrapper2">Conoce más</div>
       <span className="Primary">
         <img src={Primary} alt="icon"  /> 
@@ -47,8 +49,8 @@ const Home = () => {
 
     </section>
 
-    <section className="section-pasion-deporte">
-        <h1>Encuentra tu pasión en el deporte</h1>
+    <section className="section-pasion-deporte" >
+        <h1  ref={sectionSportRef}>Encuentra tu pasión en el deporte</h1>
         <p>Descubre nuestros planes de running, cycling, triathlon y más, diseñados para ayudarte a alcanzar tu porpósito deportivo y personal</p>
         <Deporte/>
     </section>
