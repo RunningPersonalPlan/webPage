@@ -24,7 +24,7 @@ const Accordion = ({ title, content }) => {
                 contentRef.current.style.opacity = "0";
             }
         }
-    }, [isOpen]); // Efecto que se ejecuta cuando isOpen cambia
+    }, [isOpen]); 
 
     // Efecto para inicializar el maxHeight cuando el componente se monta
     useEffect(() => {

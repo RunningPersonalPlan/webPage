@@ -11,7 +11,7 @@
     display: flex;
 }
 .accordion-title h2{
-    width: 50%;
+    width: 90%;
     display: inline-block;
     text-align: start;
     margin-top: 25px;
@@ -24,7 +24,7 @@
     line-height: 120%; /* 46.8px */
 }
 .accordion-title .isopen-img{
-    width: 50%;
+    width: 10%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -78,4 +78,20 @@
     line-height: 120%; /* 22.8px */
     letter-spacing: 0.19px;
     margin-bottom: 50px;
+}
+
+.accordion-content ul {
+    list-style-type: disc; 
+}
+
+.accordion-content ul li{
+    color: rgba(15, 15, 15, 0.80);
+    text-align: justify;
+    font-family: Recursive;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 22.8px */
+    letter-spacing: 0.19px;
+    margin-bottom: 24px;
 }

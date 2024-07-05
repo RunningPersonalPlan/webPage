@@ -3,6 +3,11 @@ import Primary from "../assets/Primary.png"
 import Deporte from "../components/Home/Deportes.jsx"
 import Accordion from "../components/Home/Accordion.jsx";
 import Seguridadtemp from "../templates/home/valores/seguridad.js"
+import BienestarIntegral from "../templates/home/valores/BienestarIntegral.js";
+import Resultados from "../templates/home/valores/Resultados.js";
+import Valoresimg from "../assets/fotos-home/valoresimg.jpg"
+
+
 const Home = () => {
 
   const handleRedirect = () => {
@@ -59,8 +64,20 @@ const Home = () => {
             content={Seguridadtemp()}
 
             />
+              <Accordion 
+            key={"BIENESTAR INTEGRAL"} 
+            title={"BIENESTAR INTEGRAL"} 
+            content={BienestarIntegral()}
+
+            />
+               <Accordion 
+            key={"RESULTADOS"} 
+            title={"RESULTADOS"} 
+            content={Resultados()}
+
+            />
           </div>
-          <img src="" alt="Nuestros valores img" className="imagen-accordeon" />
+          <img src={Valoresimg} alt="Nuestros valores img" className="imagen-accordeon" />
         </div>
         
        
