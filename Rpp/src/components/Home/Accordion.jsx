@@ -38,7 +38,7 @@ const Accordion = ({ title, content }) => {
     return (
         <div className="accordion-item">
             <button className="accordion-button" onClick={toggleAccordion}>
-                <div className="accordion-title">
+                <div className="accordion-title-s">
                     <h2 >{title}</h2>
                     <div className='isopen-img'>
                         <img src={isOpen ? Open : Close} alt='logo isopen?' />
