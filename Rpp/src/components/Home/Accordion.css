@@ -98,16 +98,16 @@
     .accordion-title-s h2{
         font-size: 20px;
         margin-left: 15px;
-        background-color: blue;
+      
     }
 }
 
 @media screen and (max-width:425px) {
     .accordion-title-s h2{
-        font-size: 15px;
-        width: 100px;
+        font-size: 20px;
+        width: 150px;
         overflow: hidden;
-        background-color: red;
+      
         margin-left: 10px;
     }
 }
