@@ -241,6 +241,46 @@
 
   }
 
+  @media screen and (max-width:425px) {
+   
+
+    .label .ALCANZA-TU-MEJOR {
+   
+      font-size: 25px;
+      
+    }
+
+    .label1 .text-wrapper1 {
+      width: 100%;
+      top:20%;
+      text-align: center;
+      font-size: 15px;
+      
+    }
+    .box1 .rectangle {
+      top:40%;
+      height: 30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+    .text-wrapper2{
+   
+      font-size: 12px;
+      font-weight: 400;
+      height: 16px;
+     
+    }
+    .Primary{
+        position: relative;
+        margin: 0;
+        margin-left: 5px;
+        top:10%;
+        width: 12px;
+        height: 12px;
+
+    }
+  }
   
  
   
