@@ -1,11 +1,12 @@
 .container-deportes{
+    align-self: center;
+    justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 201px  201px  201px  201px;
     row-gap: 22px;
     column-gap: 20px;
     padding-left: 2%;
     padding-right: 2%;
-    width:100% ; 
     background-color: transparent;
     justify-items: center;
     align-items: center;
