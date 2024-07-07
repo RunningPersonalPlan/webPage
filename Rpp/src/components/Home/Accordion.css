@@ -98,6 +98,7 @@
     .accordion-title-s h2{
         font-size: 20px;
         margin-left: 15px;
+        background-color: blue;
     }
 }
 
@@ -106,6 +107,7 @@
         font-size: 15px;
         width: 150px;
         overflow: hidden;
+        background-color: blue;
         margin-left: 10px;
     }
 }
