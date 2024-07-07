@@ -6,7 +6,7 @@ import Seguridadtemp from "../templates/home/valores/seguridad.js"
 import BienestarIntegral from "../templates/home/valores/BienestarIntegral.js";
 import Resultados from "../templates/home/valores/Resultados.js";
 import Valoresimg from "../assets/fotos-home/valoresimg.jpg"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 
 const Home = () => {
@@ -14,8 +14,13 @@ const Home = () => {
   const scrollToSection = () => {
     if (sectionSportRef.current) {
       sectionSportRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-};
+    }};
+
+    const [openIndex, setOpenIndex] = useState(null); // Estado para el índice del acordeón abierto
+
+    const handleToggle = (index) => {
+        setOpenIndex(index === openIndex ? null : index); // Abrir o cerrar acordeón
+    };
     
   return (
     <>
@@ -60,23 +65,23 @@ const Home = () => {
         <p>Seguridad, bienestar integral y resultados visibles en cada entrenamiento</p>
         <div className="container">
           <div className="container-accordion">
+          <Accordion 
+                title="SEGURIDAD" 
+                content={Seguridadtemp()} 
+                isOpen={openIndex === 0} 
+                onToggle={() => handleToggle(0)} 
+            />
             <Accordion 
-            key={"SEGURIDAD"} 
-            title={"SEGURIDAD"} 
-            content={Seguridadtemp()}
-
+                title="BIENESTAR INTEGRAL" 
+                content={BienestarIntegral()} 
+                isOpen={openIndex === 1} 
+                onToggle={() => handleToggle(1)} 
             />
-              <Accordion 
-            key={"BIENESTAR INTEGRAL"} 
-            title={"BIENESTAR INTEGRAL"} 
-            content={BienestarIntegral()}
-
-            />
-               <Accordion 
-            key={"RESULTADOS"} 
-            title={"RESULTADOS"} 
-            content={Resultados()}
-
+            <Accordion 
+                title="RESULTADOS" 
+                content={Resultados()} 
+                isOpen={openIndex === 2} 
+                onToggle={() => handleToggle(2)} 
             />
           </div>
           <img src={Valoresimg} alt="Nuestros valores img" className="imagen-accordeon" />

@@ -1,16 +1,12 @@
-import { useState, useRef, useEffect } from 'react';
+import {  useRef, useEffect } from 'react';
 import './Accordion.css';
 import PropTypes from 'prop-types';
 import Open from "../../assets/homelogo/arrow-up.svg";
 import Close from "../../assets/homelogo/arrow-down.svg";
 
-const Accordion = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Accordion = ({ title, content, isOpen, onToggle }) => {
+    
     const contentRef = useRef(null); // Crear una referencia
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    };
 
     useEffect(() => {
         if (contentRef.current) {
@@ -26,18 +22,10 @@ const Accordion = ({ title, content }) => {
         }
     }, [isOpen]); 
 
-    // Efecto para inicializar el maxHeight cuando el componente se monta
-    useEffect(() => {
-        if (contentRef.current) {
-            contentRef.current.style.maxHeight = isOpen ? contentRef.current.scrollHeight + "px" : "0px";
-            contentRef.current.style.visibility = isOpen ? "visible" : "hidden";
-            contentRef.current.style.opacity = isOpen ? "1" : "0";
-        }
-    }, []); // Efecto que se ejecuta al montar el componente
 
     return (
         <div className="accordion-item">
-            <button className="accordion-button" onClick={toggleAccordion}>
+            <button className="accordion-button" onClick={onToggle}>
                 <div className="accordion-title-s">
                     <h2 >{title}</h2>
                     <div className='isopen-img'>
@@ -56,8 +44,10 @@ const Accordion = ({ title, content }) => {
 };
 
 Accordion.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    isOpen: PropTypes.bool.isRequired,
+    onToggle: PropTypes.func.isRequired,
 };
 
 export default Accordion;
