@@ -4,11 +4,12 @@
 
 .accordion-button {
     width: 100%;
-   
+     
 }
 .accordion-title{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .accordion-title h2{
     width: 90%;
@@ -100,5 +101,14 @@
     .accordion-title h2{
         font-size: 20px;
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .accordion-title h2{
+        font-size: 15px;
+        width: 150px;
+        overflow: hidden;
+        margin-left: 10px;
     }
 }
