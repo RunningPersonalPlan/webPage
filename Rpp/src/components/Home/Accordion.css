@@ -105,9 +105,9 @@
 @media screen and (max-width:375px) {
     .accordion-title-s h2{
         font-size: 15px;
-        width: 150px;
+        width: 100px;
         overflow: hidden;
-        background-color: blue;
+        background-color: red;
         margin-left: 10px;
     }
 }
