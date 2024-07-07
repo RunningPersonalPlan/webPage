@@ -166,6 +166,11 @@
     .section-pasion-deporte p{
       font-size: 26px;
     }
+
+      .section-pasion-deporte .container img{
+    width: 50%;
+    height: 616px;
+  }
     
       
   
@@ -230,7 +235,7 @@
     }
     .section-pasion-deporte .container img{
       width: 100%;
-      height: 616px;
+      height: auto;
     }
   
 

@@ -95,3 +95,9 @@
     letter-spacing: 0.19px;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width:830px) {
+    .accordion-title h2{
+        font-size: 20px;
+    }
+}
