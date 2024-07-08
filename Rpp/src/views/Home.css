@@ -143,14 +143,12 @@
     margin-bottom: 50px;
     box-sizing: border-box;
     width: 1312px;
-    background-color: aqua;
     align-self: center;
     gap: 20px;
     display: flex;
     justify-content: flex-start;
     overflow-x: auto;
     overscroll-behavior-x: auto;
-    white-space: nowrap; /* Evita el salto de línea */
     scroll-snap-type: x mandatory;
   }
   .section-pasion-deporte .Planes-card .card-planes-home{
