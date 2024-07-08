@@ -6,7 +6,7 @@ import NotFound from './views/404.jsx'
 import "./App.css"
 import ContactUs from './views/Contacto.jsx'
 import NuestroEquipo from './views/NuestroEquipo.jsx'
-import Pupilos from './views/Pupilos.jsx'
+// import Pupilos from './views/Pupilos.jsx'
 import Footer from './components/Footer.jsx'
 import FormSubmitted from './views/FormSubmitted.jsx'
 import './index.css';
@@ -26,7 +26,7 @@ function App() {
           <Route path="/404" element={<NotFound/>} />
           <Route path="/contacto" element={<ContactUs/>} />
           <Route path="/nuestro-equipo" element={<NuestroEquipo/>} />
-          <Route path="/comunidad" element={<Pupilos/>} />
+          <Route path="/comunidad" element={<NotFound/>} />
           <Route path="/FromSubmitted" element={<FormSubmitted/>} />
           <Route path="*" element={<NotFound />} />
         

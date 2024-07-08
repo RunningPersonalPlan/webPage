@@ -1,0 +1,84 @@
+.entreno-container{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 500px 500px ;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-items: center;
+    padding: 20px;
+    gap:20px;
+    align-items: center;
+}
+
+.entreno-container .entreno-card{
+    border: 1px black solid;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.entreno-container .entreno-card span{
+    color: var(--Black);
+    /* Heading 3 */
+    font-family: Recursive;
+    font-size: 30px;
+    font-style: normal;
+    margin-right: 10px;
+    font-weight: 700;
+    line-height: 120%; /* 46.8px */
+}
+
+.entreno-container .entreno-card p{
+    display: inline-block;
+    margin: 0;
+    text-align: start;
+    color: #2D2D2D;
+    font-family: Recursive;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 22.8px */
+    letter-spacing: 0.19px;
+}
+
+.entreno-container .entreno-card .blood-entreno-p{
+    color: #2D2D2D;
+    font-family: Recursive;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.19px;
+}
+
+@media screen and (max-width:1089px) {
+    .entreno-container{
+     
+        grid-template-columns: 300px 300px ;
+        grid-template-rows: 50px 50px 50px 50px;
+      
+    }
+    
+    .entreno-container .entreno-card{
+    
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:664px) {
+
+    .entreno-container{
+     
+        grid-template-columns: 280px ;
+        grid-template-rows: 50px 50px 50px 50px;
+      
+    }
+    
+    .entreno-container .entreno-card{
+    
+        width: 300px;
+    }
+}

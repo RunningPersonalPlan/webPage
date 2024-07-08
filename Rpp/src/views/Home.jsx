@@ -7,6 +7,7 @@ import BienestarIntegral from "../templates/home/valores/BienestarIntegral.js";
 import Resultados from "../templates/home/valores/Resultados.js";
 import Valoresimg from "../assets/fotos-home/valoresimg.jpg"
 import { useRef, useState } from "react";
+import Entreno from "../components/Home/Entreno.jsx";
 
 
 const Home = () => {
@@ -86,11 +87,15 @@ const Home = () => {
           </div>
           <img src={Valoresimg} alt="Nuestros valores img" className="imagen-accordeon" />
         </div>
-        
-       
-
-    </section>
+      </section>
     
+      <section className="section-pasion-deporte" >
+        <h1>Mucho más que un entrenamiento</h1>
+        <p>Todos nuestros planes incluyen asesorías, alianzas estratégicas y fotografía profesional</p>
+        <Entreno/>
+       
+    </section>
+
       
  
     
