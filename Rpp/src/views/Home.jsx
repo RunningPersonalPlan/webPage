@@ -12,6 +12,10 @@ import Entreno from "../components/Home/Entreno.jsx";
 import Alianzas from "../templates/home/entrenamiento/Alianzas.js";
 import Asesorias from "../templates/home/entrenamiento/Asesorias.js";
 import Fotografia from "../templates/home/entrenamiento/Fotografia.js";
+import Planes from "../components/Home/Planes.jsx";
+import Standard from "../templates/home/Planes/Standard.js";
+import Premium from "../templates/home/Planes/Premium.js";
+import PremiumPlus from "../templates/home/Planes/Premiunplus.js";
 
 
 const Home = () => {
@@ -132,7 +136,35 @@ const Home = () => {
        
     </section>
 
+    <section className="section-pasion-deporte" >
+        <h1 >Empieza tu transformación hoy</h1>
+        <p id="propositos">¿Listo para cumplir tus propósitos?</p>
+        <p>Únete y descubre tu potencial con nuestros planes</p>
+        <div className="Planes-card">
+          <Planes
+          className="card-planes-home"
+          titulo = "PLAN STANDARD"
+          contenido= {Standard()}
+          tema="yellow-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan STANDARD . ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+          <Planes
+          className="card-planes-home"
+          titulo = "PLAN PREMIUM"
+          contenido={Premium()}
+          tema="black-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan PREMIUM . ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+          <Planes
+          className="card-planes-home"
+          titulo = "PLAN PREMIUM +"
+          contenido={PremiumPlus()}
+          tema="yellow-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan PREMIUM +. ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+        </div>
       
+    </section>
  
     
     </>

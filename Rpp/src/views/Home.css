@@ -138,6 +138,37 @@
     height: 616px;
   }
 
+  .section-pasion-deporte .Planes-card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    width: 1312px;
+    background-color: aqua;
+    align-self: center;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-x: auto;
+    white-space: nowrap; /* Evita el salto de línea */
+    scroll-snap-type: x mandatory;
+  }
+  .section-pasion-deporte .Planes-card .card-planes-home{
+    flex: 0 0 auto; /* Asegura que las tarjetas no se expandan */
+    scroll-snap-align: start; /* Alinea la primera tarjeta al inicio del scroll */
+    flex-shrink: 0;
+    width: 424px;
+    min-width: 420px;
+  }
+  #propositos{
+    margin-bottom: 5px;
+  
+  }
+  @media screen and (max-width: 1324px) {
+    .section-pasion-deporte .Planes-card{
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 1024px) {
    
     .header-img {
@@ -167,11 +198,14 @@
       font-size: 26px;
     }
 
-      .section-pasion-deporte .container img{
+    .section-pasion-deporte .container img{
     width: 50%;
     height: 616px;
   }
-    
+  #propositos{
+  
+    margin-bottom: 5px;
+  }
       
   
   }
@@ -237,6 +271,9 @@
       width: 100%;
       height: auto;
     }
+    #propositos{
+      margin-bottom: 5px;
+    }
   
 
   }
@@ -279,6 +316,9 @@
         width: 12px;
         height: 12px;
 
+    }
+    #propositos{
+      margin-bottom: 5px;
     }
   }
   

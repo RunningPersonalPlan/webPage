@@ -1,0 +1,140 @@
+.yellow-card{
+    --bgcolor:var(--yellow);
+    --tprimarycolor:var(--black);
+    --tsecondarycolor:rgba(15, 15, 15, 0.60);
+    --bgbutton:var(--black);
+    --tbutton:var(--yellow);
+    --imgliincluye:url('../../assets/inculyeyellow.svg');
+    --imgnoincluye:url('../../assets/noincluyeyellow.svg');
+}
+.black-card{
+
+    --bgcolor:var(--black);
+    --tprimarycolor:#F2F2F2;
+    --tsecondarycolor:rgba(242, 242, 242, 0.60);
+    --bgbutton:var(--yellow);
+    --tbutton:var(--black);
+    --imgliincluye:url('../../assets/incluyeblack.svg');
+}
+
+.planes-container-card{
+    width: 424px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    height: 611px;
+    border-radius: 20px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    background: var(--bgcolor);
+}
+
+.planes-container-card .titulo-card{
+    color: var(--tprimarycolor);
+    text-align: start;
+    /* Heading 3 */
+    font-family: Recursive;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 46.8px */
+}
+
+.planes-container-card .card-content{
+    width: 100%;
+    height: 400px;
+}
+
+.planes-container-card h6{
+    color: var(--tsecondarycolor);
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Recursive;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    letter-spacing: 0.15px;
+}
+.planes-container-card .p-descripcion-card{
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: start;
+    color: var(--tprimarycolor);
+    font-family: Recursive;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
+}
+.planes-container-card li{
+    color: var(--tprimarycolor);
+    margin-bottom: 20px;
+    font-family: Recursive;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
+}
+
+.planes-container-card li .incluye-card-option{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: var(--imgliincluye); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: contain; 
+}
+
+.planes-container-card li .no-incluye-card-option{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: var(--imgnoincluye); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: contain; 
+}
+
+.planes-container-card .whatsapp-button-planes{
+ 
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 313px;
+    height: 60px;
+    border-radius: 46px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background: var(--bgbutton)
+
+}
+.whatsapp-button-planes .text-Button{
+    color: var(--tbutton);
+    width:fit-content;
+    overflow: hidden;
+    display: inline-block;
+}
+.whatsapp-button-planes .Icon-Button{
+    color: var(--tbutton);
+    margin-left: 5px;
+    width: fit-content;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.planes-container-card .fotter-card-planes{
+    color: var(--tsecondarycolor);
+    margin: 0;
+    font-family: Recursive;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+}
