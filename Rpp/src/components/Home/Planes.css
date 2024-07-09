@@ -32,6 +32,9 @@
 .planes-container-card .titulo-card{
     color: var(--tprimarycolor);
     text-align: start;
+    width:100%;
+    white-space: nowrap;
+
     /* Heading 3 */
     font-family: Recursive;
     font-size: 39px;

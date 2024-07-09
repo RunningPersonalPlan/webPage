@@ -150,9 +150,9 @@
     overflow-x: auto;
     overscroll-behavior-x: auto;
     scroll-snap-type: x mandatory;
+    
   }
   .section-pasion-deporte .Planes-card .card-planes-home{
-    flex: 0 0 auto; /* Asegura que las tarjetas no se expandan */
     scroll-snap-align: start; /* Alinea la primera tarjeta al inicio del scroll */
     flex-shrink: 0;
     width: 424px;
