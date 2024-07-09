@@ -150,13 +150,29 @@
     overflow-x: auto;
     overscroll-behavior-x: auto;
     scroll-snap-type: x mandatory;
-    
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: lightgray white; /* Firefox */
+    scroll-behavior: smooth;
+    cursor:all-scroll;
   }
+  .section-pasion-deporte .Planes-card::-webkit-scrollbar {
+    height: 6px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+  .section-pasion-deporte .Planes-card::-webkit-scrollbar-track {
+      background: white; /* Color de fondo de la pista */
+  }
+
+  .section-pasion-deporte .Planes-card::-webkit-scrollbar-thumb {
+      background-color: lightgray; /* Color del pulgar (la parte que se mueve) */
+      border-radius: 10px; /* Bordes redondeados del pulgar */
+  }
+
   .section-pasion-deporte .Planes-card .card-planes-home{
-    scroll-snap-align: start; /* Alinea la primera tarjeta al inicio del scroll */
-    flex-shrink: 0;
     width: 424px;
     min-width: 420px;
+    cursor:all-scroll;
+   
   }
   #propositos{
     margin-bottom: 5px;
