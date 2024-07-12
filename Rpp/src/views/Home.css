@@ -167,8 +167,15 @@
       background-color: lightgray; /* Color del pulgar (la parte que se mueve) */
       border-radius: 10px; /* Bordes redondeados del pulgar */
   }
+  .section-pasion-deporte .Planes-card--swiper {
+    display: none ;
+  }
+  
+  .section-pasion-deporte .swiper {
+    display: none ;
+  }
 
-  .section-pasion-deporte .Planes-card .card-planes-home{
+  .card-planes-home{
     width: 424px;
     min-width: 420px;
     cursor:all-scroll;
@@ -178,9 +185,18 @@
     margin-bottom: 5px;
   
   }
+
   @media screen and (max-width: 1324px) {
     .section-pasion-deporte .Planes-card{
-      width: 100%;
+      display: none;
+    }
+    .section-pasion-deporte .Planes-card--swiper {
+      display: flex ;
+      width: 420px;
+    }
+    
+    .section-pasion-deporte .swiper {
+      display: flex ;
     }
   }
   @media screen and (max-width: 1024px) {
@@ -225,12 +241,17 @@
   }
 
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:630px) {
+    .section-pasion-deporte .Planes-card--swiper {
+      display: flex ;
+      width: 250px;
+    }
     .header-img {
       height: 900px;
       background-position-y:-50px;
       background-position-x:60%;
     }
+    
 
     .label .ALCANZA-TU-MEJOR {
       width: 100%;
@@ -294,7 +315,7 @@
 
   @media screen and (max-width:425px) {
    
-
+  
     .label .ALCANZA-TU-MEJOR {
    
       font-size: 25px;
@@ -334,6 +355,13 @@
     #propositos{
       margin-bottom: 5px;
     }
+  }
+  @media screen and (max-width:377px) {
+    .section-pasion-deporte .Planes-card--swiper {
+      display: flex ;
+      width: 200px;
+    }
+
   }
   
  

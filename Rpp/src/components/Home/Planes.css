@@ -147,7 +147,61 @@
     line-height: 120%;
     letter-spacing: 0.2px;
 }
-@media screen and (max-width:449px) {
+@media screen and (max-width:630px) {
+    .planes-container-card{
+        width: 250px;
+        height: 435px;
+    }
+    .planes-container-card .titulo-card{
+        font-size: 20px;
+    }
+    .planes-container-card .card-content{
+    
+        height: 350px;
+    }
+    .planes-container-card h6{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .planes-container-card .p-descripcion-card{
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+    .planes-container-card li{
+       
+        margin-bottom: 5px;
+        font-size: 11px;
+     
+    }
+    
+    .planes-container-card li .incluye-card-option{
+    
+        width: 11px;
+        height: 11px;
+       
+    }
+    
+    .planes-container-card li .no-incluye-card-option{
+        width: 11px;
+        height: 11px;
+    }
+    
+    .planes-container-card .whatsapp-button-planes{
+    
+        width: 200px;
+        height: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      
+    }
+    .whatsapp-button-planes .text-Button{
+        font-size: 24px;
+    }
+    
+   
+}
+/* @media screen and (max-width:449px) {
     
 .planes-container-card{
     width: 327px;
@@ -201,18 +255,18 @@
 }
 
 
-}
+} */
 
-@media screen and (max-width:384px) {
+@media screen and (max-width:377px) {
        
 .planes-container-card{
-    width: 250px;
+    width: 200px;
     height: 435px;
 }
 
 .planes-container-card .whatsapp-button-planes{
 
-    width: 200px;
+    width: 150px;
     height: 45px;
     margin-top: 10px;
     margin-bottom: 10px;

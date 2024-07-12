@@ -16,6 +16,15 @@ import Planes from "../components/Home/Planes.jsx";
 import Standard from "../templates/home/Planes/Standard.js";
 import Premium from "../templates/home/Planes/Premium.js";
 import PremiumPlus from "../templates/home/Planes/Premiunplus.js";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+// import required modules
+import { EffectCards } from 'swiper/modules';
 
 
 const Home = () => {
@@ -163,6 +172,47 @@ const Home = () => {
           mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan PREMIUM +. ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
           />
         </div>
+
+        <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="Planes-card--swiper"
+      >
+        <SwiperSlide>
+        <Planes
+          className="card-planes-home"
+          titulo = "PLAN STANDARD"
+          contenido= {Standard()}
+          tema="yellow-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan STANDARD . ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+
+        </SwiperSlide>
+      
+        <SwiperSlide>
+        <Planes
+          className="card-planes-home"
+          titulo = "PLAN PREMIUM"
+          contenido={Premium()}
+          tema="black-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan PREMIUM . ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <Planes
+          className="card-planes-home"
+          titulo = "PLAN PREMIUM +"
+          contenido={PremiumPlus()}
+          tema="yellow-card"
+          mensajeWhatsApp="Hola, estoy interesado en obtener información y una cotización sobre su plan PREMIUM +. ¿Podrían proporcionarme más detalles sobre las opciones disponibles y los precios? Muchas gracias."
+          />
+        </SwiperSlide>
+     
+        
+       </Swiper>
       
     </section>
  
