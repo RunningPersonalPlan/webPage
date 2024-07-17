@@ -136,6 +136,11 @@
   .section-pasion-deporte .container img{
     width: 50%;
     height: 616px;
+    border-radius: 5px;
+    mask-image: linear-gradient(
+      black 80%,
+      transparent
+    );
   }
 
   .section-pasion-deporte .Planes-card{

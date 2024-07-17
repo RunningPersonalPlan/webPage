@@ -42,17 +42,17 @@ const Navbar = () => {
       </span>
       CONTACTO
       </a>
-      <div className="icons-nav">
+      <div className="icons-nav " style={{ '--i': 4 }}>
         <a href="/" className="logo">
           <img src={logo} className='logo' alt='logo'/>
         </a>
-        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+        <a href="https://www.instagram.com/runningpersonalplan/" className="logo" >
           <FaInstagram className='icon-react' />
         </a>
-        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+        <a href="https://www.tiktok.com/@rppcol?_t=8nUu0F3HIrV&_r=1" className="logo">
           <FaTiktok className='icon-react'/>
         </a>
-        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+        <a href="https://www.linkedin.com/" className="logo">
           <FaLinkedin className='icon-react'/>
         </a>
       </div>

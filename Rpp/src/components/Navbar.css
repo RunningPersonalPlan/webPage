@@ -148,6 +148,8 @@
 
   .navbar .icons-nav{
     display: none;
+    position: relative;
+    transition: all 0.5s ease-in-out;
     height: 30;
     overflow: hidden;
     justify-content: center;
@@ -242,11 +244,17 @@
       opacity: 0;
     }
   
-    #check:checked ~ .navbar a {
+    #check:checked ~ .navbar a{      
       transform: translateY(0);
       opacity: 1;
       transition-delay: calc(0.15s * var(--i));
     }
+    #check:checked ~ .navbar div {
+      transform: translate(-50%, -52%);
+      opacity: 1;
+      transition-delay: calc(0.15s * var(--i));
+    }
+
   
     #check:checked ~ .icons #menu-icon {
       display: none;
@@ -271,6 +279,7 @@
       transform: translate(-50%, -50%);
       height: 30;
       overflow: hidden;
+      opacity: 0;
       justify-content: center;
       align-items: center;
       gap: 10px;
