@@ -145,6 +145,15 @@
   #check {
     display: none;
   }
+
+  .navbar .icons-nav{
+    display: none;
+    height: 30;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
   
   /* responsive */
   @media (max-width: 817px) {
@@ -248,10 +257,32 @@
     }
   
     #check:checked ~ .navbar {
-      height: 250px;
+      height: 100vh;
     }
   
     .navItem::after {
       height: 0px;
     }
+    .navbar .icons-nav{
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top:60%;
+      transform: translate(-50%, -50%);
+      height: 30;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .icons-nav .logo{
+      height: fit-content;
+      cursor: pointer;
+    }
+    .icons-nav .logo .icon-react{
+      width: 30px;
+      height: 30px;
+    }
+
+    
   }

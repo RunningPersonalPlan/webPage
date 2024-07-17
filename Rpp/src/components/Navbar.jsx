@@ -2,6 +2,10 @@ import  { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from "../assets/RPPlogo.svg";
 import whatsapp from "../assets/WhatsappLogo.svg"
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -38,6 +42,20 @@ const Navbar = () => {
       </span>
       CONTACTO
       </a>
+      <div className="icons-nav">
+        <a href="/" className="logo">
+          <img src={logo} className='logo' alt='logo'/>
+        </a>
+        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+          <FaInstagram className='icon-react' />
+        </a>
+        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+          <FaTiktok className='icon-react'/>
+        </a>
+        <a href="https://www.instagram.com/runningpersonalplan/" className="logo">
+          <FaLinkedin className='icon-react'/>
+        </a>
+      </div>
     </nav>
   </header>
 
