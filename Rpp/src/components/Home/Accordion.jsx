@@ -21,7 +21,7 @@ const Accordion = ({ title, content, isOpen, onToggle }) => {
             }
         }
     }, [isOpen]); 
-
+ 
 
     return (
         <div className="accordion-item">
