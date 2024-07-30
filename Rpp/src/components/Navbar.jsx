@@ -91,17 +91,20 @@ const Navbar = () => {
         <div className="hamburger dark:bg-gray-100 dark:before:bg-gray-100 dark:after:bg-gray-100 "></div>
       </div>
     </label>
-    <nav className="navbar dark:bg-slate-900 ">
+    <nav className="navbar   dark:bg-slate-900 ">
    
       <Link to="/" className={`navItem ${currentPage === '/' ? 'active' : ''} dark:border-white`} style={{ '--i': 0 }} >HOME</Link>
       <Link to="/nuestro-equipo" className={`navItem ${currentPage === '/nuestro-equipo' ? 'active' : ''} dark:border-white`} style={{ '--i': 1 }}>NUESTRO EQUIPO</Link>
       <Link to="/comunidad" className={`navItem ${currentPage === '/comunidad' ? 'active' : ''} dark:border-white`} style={{ '--i': 2 }}>TESTIMONIOS</Link>
       <a href="https://wa.me/573107686892" className="navItem dark:border-white" id="whatsapp" style={{ '--i': 3 }}>
-      <span className="whatsappspan">
+      <span className="whatsappspan" >
         <img src={whatsapp} alt="whatsappicon"  /> 
       </span>
       CONTACTO
       </a>
+      <div className=' ' id='icon-dark' >
+        {renderIcon()}
+      </div>
      
       
       <div className="icons-nav " style={{ '--i': 4 }}>
@@ -138,9 +141,7 @@ const Navbar = () => {
         {renderIcon()}
       </div>
     </nav>
-    <a className='' id='icon-dark'>
-        {renderIcon()}
-     </a>
+   
   </header>
 
    

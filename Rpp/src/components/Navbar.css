@@ -148,13 +148,10 @@
   }
 
   #icon-dark{
-    text-align: center;
-    font-family: Recursive;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; 
-    transition: all 0.5s ease-in-out;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
   }
 
   .navbar .icons-nav{
