@@ -11,7 +11,6 @@
 }
 
 .entreno-container .entreno-card{
-    border: 1px black solid;
     width: 500px;
     height: 50px;
     padding: 10px;
@@ -21,7 +20,6 @@
 }
 
 .entreno-container .entreno-card span{
-    color: var(--Black);
     /* Heading 3 */
     font-family: Recursive;
     font-size: 30px;
@@ -35,7 +33,6 @@
     display: inline-block;
     margin: 0;
     text-align: start;
-    color: #2D2D2D;
     font-family: Recursive;
     font-size: 15px;
     font-style: normal;
@@ -45,7 +42,7 @@
 }
 
 .entreno-container .entreno-card .blood-entreno-p{
-    color: #2D2D2D;
+ 
     font-family: Recursive;
     font-size: 19px;
     font-style: normal;

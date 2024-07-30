@@ -15,7 +15,7 @@
     width: 90%;
     display: inline-block;
     text-align: start;
-    color: var(--Black);
+    
     font-family: Recursive;
     font-size: 39px;
     font-style: normal;
@@ -55,7 +55,7 @@
 
 
 .accordion-content h3{
-    color: var(--Black);
+    
     display: inline-block;
     margin-bottom: 24px;
     text-align: justify;
@@ -67,7 +67,7 @@
 }
 
 .accordion-content p{
-    color: rgba(15, 15, 15, 0.80);
+   
     text-align: justify;
     font-family: Recursive;
     font-size: 19px;
@@ -83,7 +83,7 @@
 }
 
 .accordion-content ul li{
-    color: rgba(15, 15, 15, 0.80);
+   
     text-align: justify;
     font-family: Recursive;
     font-size: 19px;

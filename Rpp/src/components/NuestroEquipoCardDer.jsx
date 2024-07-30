@@ -16,7 +16,7 @@ const NuestroEquipoCardDer = ({ nombre,imagen, apellido }) => {
         alt={`Imagen de ${nombre}`}
       />
 
-      <div className='Nombre-der' >
+      <div className='Nombre-der text-black dark:text-gray-400' >
       <h1 >
         {nombre}
       </h1>

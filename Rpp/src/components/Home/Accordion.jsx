@@ -3,10 +3,28 @@ import './Accordion.css';
 import PropTypes from 'prop-types';
 import Open from "../../assets/homelogo/arrow-up.svg";
 import Close from "../../assets/homelogo/arrow-down.svg";
+import { ChevronUpIcon } from '@heroicons/react/24/solid';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const Accordion = ({ title, content, isOpen, onToggle }) => {
     
     const contentRef = useRef(null); // Crear una referencia
+
+    const renderOpen = ()=>{
+        if(isOpen){
+            return(
+                <ChevronUpIcon
+                    className='w-full h-full text-black cursor-pointer dark:text-white'
+                />
+            )
+        }else{
+            return(
+                <ChevronDownIcon
+                    className='w-full h-full text-black cursor-pointer dark:text-white'
+                />
+            )
+        }
+    }
 
     useEffect(() => {
         if (contentRef.current) {
@@ -21,21 +39,23 @@ const Accordion = ({ title, content, isOpen, onToggle }) => {
             }
         }
     }, [isOpen]); 
+
+
  
 
     return (
         <div className="accordion-item">
             <button className="accordion-button" onClick={onToggle}>
                 <div className="accordion-title-s">
-                    <h2 >{title}</h2>
+                    <h2 className='text-black dark:text-white' >{title}</h2>
                     <div className='isopen-img'>
-                        <img src={isOpen ? Open : Close} alt='logo isopen?' />
+                        {renderOpen()}
                     </div>
                 </div>
             </button>
             <div 
                 ref={contentRef} // Asignar la referencia al elemento
-                className={`accordion-content ${isOpen ? 'open' : ''}`}
+                className={`accordion-content ${isOpen ? 'open' : ''} text-gray-900 dark:text-gray-400`}
                 dangerouslySetInnerHTML={{ __html: content }}
             >
             </div>

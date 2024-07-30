@@ -1,5 +1,4 @@
 .titulo-entreno{
-    color: #000;
     font-family: Recursive;
     font-size: 95px;
     font-style: normal;
@@ -22,7 +21,7 @@
     margin-right: 32px;
 }
 .flex-titulo-area-1 {
-    color: var(--Black, #0F0F0F);
+  
 
     /* Heading 4 */
     font-family: Recursive;
@@ -32,7 +31,7 @@
     line-height: 120%; /* 30px */
 }
 .titulo-area-1 {
-    color: var(--Black, #0F0F0F);
+    
 
     /* Heading 4 */
     font-family: Recursive;
@@ -42,7 +41,7 @@
     line-height: 120%; /* 30px */
 }
 .content-area-1{
-    color: #2D2D2D;
+  
 
     text-align: justify;
     font-family: Recursive;
@@ -54,7 +53,7 @@
 }
 
 .flex-content-area-1{
-    color: #2D2D2D;
+    
 
     text-align: justify;
     font-family: Recursive;

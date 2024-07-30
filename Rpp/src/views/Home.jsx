@@ -51,8 +51,8 @@ const Home = () => {
     <section className='header-img'>
       <section className="textos-header">
       <div className="label">
-      <p className="ALCANZA-TU-MEJOR">
-        <span className="text-wrapper">
+      <p className="ALCANZA-TU-MEJOR dark:text-white ">
+        <span className="text-wrapper  text-black dark:text-white">
         MATERIALIZA TU <br />
         </span>
         <span className="span">MEJOR VERSIÓN</span>
@@ -60,7 +60,7 @@ const Home = () => {
       </div>
 
       <div className="label1">
-      <p className="text-wrapper1">
+      <p className="text-wrapper1 text-gray-800 dark:text-gray-300">
         Te ayudamos a cuidar tu cuerpo y mente, entrenar de forma segura y alcanzar tus propósitos
       </p>
       </div>
@@ -79,14 +79,14 @@ const Home = () => {
     </section>
 
     <section className="section-pasion-deporte" >
-        <h1  ref={sectionSportRef}>Encuentra tu pasión en el deporte</h1>
-        <p>Descubre nuestros planes de running, cycling, triathlon y más, diseñados para ayudarte a alcanzar tu porpósito deportivo y personal</p>
+        <h1  ref={sectionSportRef} className="text-black dark:text-white">Encuentra tu pasión en el deporte</h1>
+        <p className="text-gray-900 dark:text-gray-400">Descubre nuestros planes de running, cycling, triathlon y más, diseñados para ayudarte a alcanzar tu porpósito deportivo y personal</p>
         <Deporte/>
     </section>
 
     <section className="section-pasion-deporte">
-        <h1>Nuestros valores, ¡tu tranquilidad!</h1>
-        <p>Seguridad, bienestar integral y resultados visibles en cada entrenamiento</p>
+        <h1 className="text-black dark:text-white" >Nuestros valores, ¡tu tranquilidad!</h1>
+        <p className="text-gray-900 dark:text-gray-400">Seguridad, bienestar integral y resultados visibles en cada entrenamiento</p>
         <div className="container">
           <div className="container-accordion">
           <Accordion 
@@ -113,8 +113,8 @@ const Home = () => {
       </section>
     
       <section className="section-pasion-deporte" >
-        <h1>Mucho más que un entrenamiento</h1>
-        <p>Todos nuestros planes incluyen asesorías, alianzas estratégicas y fotografía profesional</p>
+        <h1 className="text-black dark:text-white" >Mucho más que un entrenamiento</h1>
+        <p className="text-gray-900 dark:text-gray-400">Todos nuestros planes incluyen asesorías, alianzas estratégicas y fotografía profesional</p>
         <Entreno/>
 
         <div className="container">
@@ -146,9 +146,9 @@ const Home = () => {
     </section>
 
     <section className="section-pasion-deporte" >
-        <h1 >Empieza tu transformación hoy</h1>
-        <p id="propositos">¿Listo para cumplir tus propósitos?</p>
-        <p>Únete y descubre tu potencial con nuestros planes</p>
+        <h1 className="text-black dark:text-white" >Empieza tu transformación hoy</h1>
+        <p id="propositos" className="text-gray-900 dark:text-gray-400">¿Listo para cumplir tus propósitos?</p>
+        <p className="text-gray-900 dark:text-gray-400">Únete y descubre tu potencial con nuestros planes</p>
         <div className="Planes-card">
           <Planes
           className="card-planes-home"

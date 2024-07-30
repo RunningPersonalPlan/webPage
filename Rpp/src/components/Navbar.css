@@ -130,6 +130,7 @@
   #whatsapp:hover{
     background-color: #2ab65d;
   }
+
   .whatsappspan{
     height: 25px;
     display: inline-block;
@@ -146,6 +147,16 @@
     display: none;
   }
 
+  #icon-dark{
+    text-align: center;
+    font-family: Recursive;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    transition: all 0.5s ease-in-out;
+  }
+
   .navbar .icons-nav{
     display: none;
     position: relative;
@@ -159,6 +170,9 @@
   
   /* responsive */
   @media (max-width: 817px) {
+    #icon-dark{
+      display: none;
+    }
     .header {
       padding: 5px 5%;
     }
