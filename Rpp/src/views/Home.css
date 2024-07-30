@@ -19,7 +19,7 @@
   
   .label .ALCANZA-TU-MEJOR {
     color: transparent;
-    font-family: "Recursive-ExtraBold", Helvetica;
+    font-family: Recursive;
     font-size: 95px;
     font-weight: 400;
     left: 0;
@@ -36,13 +36,13 @@
   
   .label .span {
     color: #ffbd00;
-    font-family: "Recursive-Black", Helvetica;
     font-weight: 900;
+    font-family: Recursive;
   }
 
   
   .label1 .text-wrapper1 {
-    font-family: "Recursive-Regular", Helvetica;
+    font-family: Recursive;
     font-size: 25px;
     font-weight: 400;
     height: 53px;
@@ -68,7 +68,7 @@
   }
   .text-wrapper2{
     color:var(--black);
-    font-family: "Recursive-Regular", Helvetica;
+    font-family: Recursive;
     font-size: 24px;
     font-weight: 400;
     height: 16px;
