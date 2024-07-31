@@ -29,14 +29,14 @@ const Navbar = () => {
       if(!isToggled){
         return(
           <MoonIcon
-          className="w-6 h-6  cursor-pointer text-blue-700"
+          className="w-6 h-6 inline-block  cursor-pointer text-blue-700"
           onClick={()=>toggled(!isToggled)}        
           />
         )
       }else{
         return(
           <SunIcon
-          className='w-6 h-6  text-amber-500 cursor-pointer '
+          className='w-6 h-6 inline-block text-amber-500 cursor-pointer '
           onClick={()=>toggled(!isToggled)}    
           />
         )
@@ -102,9 +102,12 @@ const Navbar = () => {
       </span>
       CONTACTO
       </a>
-      <div className=' ' id='icon-dark' >
-        {renderIcon()}
-      </div>
+      <a className=' '  id="icon-dark-container" >
+        <span id='icon-dark' >
+          {renderIcon()}
+        </span>
+
+      </a>
      
       
       <div className="icons-nav " style={{ '--i': 4 }}>

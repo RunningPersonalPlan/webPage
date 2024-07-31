@@ -148,10 +148,20 @@
   }
 
   #icon-dark{
-    height: 25px;
     display: inline-block;
+    position: relative;
+  }
+
+  #icon-dark-container{
+    position: relative;
+    display: inline-flex;
+    width: 30px;
+    height: 100%;
     margin-left: 10px;
     position: relative;
+    border-radius: 38px;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar .icons-nav{
@@ -168,6 +178,9 @@
   /* responsive */
   @media (max-width: 817px) {
     #icon-dark{
+      display: none;
+    }
+    #icon-dark-container{
       display: none;
     }
     .header {
